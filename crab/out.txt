@@ -1,0 +1,68 @@
+DYJetsToLL_M50        [{"file_size":7297684290732,"nblocks":18,"nevents":182359906,"nfiles":2126,"nlumis":219204,"num_block":18,"num_event":182359906,"num_file":2126,"num_lumi":219204}]
+
+ExLepEEZ_M1000        [{"file_size":10948813448,"nblocks":12,"nevents":194000,"nfiles":14,"nlumis":194,"num_block":12,"num_event":194000,"num_file":14,"num_lumi":194}]
+
+ExLepEEZ_M1250        [{"file_size":10560824133,"nblocks":20,"nevents":186000,"nfiles":20,"nlumis":186,"num_block":20,"num_event":186000,"num_file":20,"num_lumi":186}]
+
+ExLepEEZ_M1500        [{"file_size":11225227889,"nblocks":18,"nevents":198000,"nfiles":18,"nlumis":198,"num_block":18,"num_event":198000,"num_file":18,"num_lumi":198}]
+
+ExLepEEZ_M1750        [{"file_size":10620643463,"nblocks":13,"nevents":187000,"nfiles":15,"nlumis":187,"num_block":13,"num_event":187000,"num_file":15,"num_lumi":187}]
+
+ExLepEEZ_M2000        [{"file_size":11394836379,"nblocks":19,"nevents":200000,"nfiles":19,"nlumis":200,"num_block":19,"num_event":200000,"num_file":19,"num_lumi":200}]
+
+ExLepEEZ_M250         [{"file_size":10422425560,"nblocks":16,"nevents":192000,"nfiles":16,"nlumis":192,"num_block":16,"num_event":192000,"num_file":16,"num_lumi":192}]
+
+ExLepEEZ_M2500        [{"file_size":10731268084,"nblocks":16,"nevents":188000,"nfiles":16,"nlumis":188,"num_block":16,"num_event":188000,"num_file":16,"num_lumi":188}]
+
+ExLepEEZ_M3000        [{"file_size":11556418020,"nblocks":18,"nevents":200000,"nfiles":19,"nlumis":200,"num_block":18,"num_event":200000,"num_file":19,"num_lumi":200}]
+
+ExLepEEZ_M3500        [{"file_size":11736913980,"nblocks":26,"nevents":200000,"nfiles":26,"nlumis":200,"num_block":26,"num_event":200000,"num_file":26,"num_lumi":200}]
+
+ExLepEEZ_M4000        [{"file_size":11631932163,"nblocks":15,"nevents":200000,"nfiles":17,"nlumis":200,"num_block":15,"num_event":200000,"num_file":17,"num_lumi":200}]
+
+ExLepEEZ_M4500        [{"file_size":11917539457,"nblocks":30,"nevents":200000,"nfiles":30,"nlumis":200,"num_block":30,"num_event":200000,"num_file":30,"num_lumi":200}]
+
+ExLepEEZ_M500         [{"file_size":10882832975,"nblocks":20,"nevents":194000,"nfiles":22,"nlumis":194,"num_block":20,"num_event":194000,"num_file":22,"num_lumi":194}]
+
+ExLepEEZ_M5000        [{"file_size":11134812321,"nblocks":21,"nevents":189000,"nfiles":21,"nlumis":189,"num_block":21,"num_event":189000,"num_file":21,"num_lumi":189}]
+
+ExLepEEZ_M750         [{"file_size":11312122779,"nblocks":27,"nevents":198000,"nfiles":28,"nlumis":198,"num_block":27,"num_event":198000,"num_file":28,"num_lumi":198}]
+
+ExLepMuMuZ_M1000      [{"file_size":11109876348,"nblocks":16,"nevents":200000,"nfiles":16,"nlumis":200,"num_block":16,"num_event":200000,"num_file":16,"num_lumi":200}]
+
+ExLepMuMuZ_M1250      [{"file_size":11099776445,"nblocks":13,"nevents":200000,"nfiles":14,"nlumis":200,"num_block":13,"num_event":200000,"num_file":14,"num_lumi":200}]
+
+ExLepMuMuZ_M1500      [{"file_size":11141455917,"nblocks":11,"nevents":200000,"nfiles":12,"nlumis":200,"num_block":11,"num_event":200000,"num_file":12,"num_lumi":200}]
+
+ExLepMuMuZ_M1750      [{"file_size":10532652789,"nblocks":14,"nevents":188000,"nfiles":14,"nlumis":188,"num_block":14,"num_event":188000,"num_file":14,"num_lumi":188}]
+
+ExLepMuMuZ_M2000      [{"file_size":11204150868,"nblocks":14,"nevents":200000,"nfiles":15,"nlumis":200,"num_block":14,"num_event":200000,"num_file":15,"num_lumi":200}]
+
+ExLepMuMuZ_M250       [{"file_size":9992094303,"nblocks":17,"nevents":188000,"nfiles":17,"nlumis":188,"num_block":17,"num_event":188000,"num_file":17,"num_lumi":188}]
+
+ExLepMuMuZ_M2500      [{"file_size":11267986975,"nblocks":16,"nevents":200000,"nfiles":16,"nlumis":200,"num_block":16,"num_event":200000,"num_file":16,"num_lumi":200}]
+
+ExLepMuMuZ_M3000      [{"file_size":10798591451,"nblocks":13,"nevents":190000,"nfiles":13,"nlumis":190,"num_block":13,"num_event":190000,"num_file":13,"num_lumi":190}]
+
+ExLepMuMuZ_M3500      [{"file_size":11188170577,"nblocks":11,"nevents":197000,"nfiles":11,"nlumis":197,"num_block":11,"num_event":197000,"num_file":11,"num_lumi":197}]
+
+ExLepMuMuZ_M4000      [{"file_size":11187769089,"nblocks":16,"nevents":194000,"nfiles":16,"nlumis":194,"num_block":16,"num_event":194000,"num_file":16,"num_lumi":194}]
+
+ExLepMuMuZ_M4500      [{"file_size":10924057836,"nblocks":7,"nevents":190000,"nfiles":9,"nlumis":190,"num_block":7,"num_event":190000,"num_file":9,"num_lumi":190}]
+
+ExLepMuMuZ_M500       [{"file_size":10853815419,"nblocks":13,"nevents":200000,"nfiles":13,"nlumis":200,"num_block":13,"num_event":200000,"num_file":13,"num_lumi":200}]
+
+ExLepMuMuZ_M5000      [{"file_size":11257342298,"nblocks":18,"nevents":194000,"nfiles":18,"nlumis":194,"num_block":18,"num_event":194000,"num_file":18,"num_lumi":194}]
+
+ExLepMuMuZ_M750       [{"file_size":10757453334,"nblocks":9,"nevents":196000,"nfiles":11,"nlumis":196,"num_block":9,"num_event":196000,"num_file":11,"num_lumi":196}]
+
+TT                    [{"file_size":8431652119393,"nblocks":12,"nevents":153531390,"nfiles":2304,"nlumis":246122,"num_block":12,"num_event":153531390,"num_file":2304,"num_lumi":246122}]
+
+WJetsToLNu            [{"file_size":1756207826672,"nblocks":215,"nevents":44627200,"nfiles":738,"nlumis":47685,"num_block":215,"num_event":44627200,"num_file":738,"num_lumi":47685}]
+
+WW                    [{"file_size":309096342083,"nblocks":4,"nevents":7791498,"nfiles":93,"nlumis":7923,"num_block":4,"num_event":7791498,"num_file":93,"num_lumi":7923}]
+
+WZ                    [{"file_size":157898337134,"nblocks":2,"nevents":3928630,"nfiles":50,"nlumis":4294,"num_block":2,"num_event":3928630,"num_file":50,"num_lumi":4294}]
+
+ZZ                    [{"file_size":78699399934,"nblocks":2,"nevents":1949768,"nfiles":23,"nlumis":2174,"num_block":2,"num_event":1949768,"num_file":23,"num_lumi":2174}]
+

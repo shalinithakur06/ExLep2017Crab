@@ -1,0 +1,13 @@
+Running crab status first to fetch necessary information.
+Will save lumi files into output directory /afs/cern.ch/work/s/sthakur/xRavindra/MiniTree2017Data/CMSSW_10_4_0/src/ExLep2017Crab/crab/CrabData_20191101/crab_EleRunBver2v2_Data_20191101/results
+Summary from jobs in status 'finished':
+  Number of files processed: 498
+  Number of events read: 56501676
+  Number of events written in EDM files: 0
+  Number of events written in TFileService files: 0
+  Number of events written in other type of files: 0
+  Processed lumis written to processedLumis.json
+Additional report lumi files:
+  Input dataset lumis (from DBS, at task submission time) written to inputDatasetLumis.json
+  Lumis to process written to lumisToProcess.json
+Log file is /afs/cern.ch/work/s/sthakur/xRavindra/MiniTree2017Data/CMSSW_10_4_0/src/ExLep2017Crab/crab/CrabData_20191101/crab_EleRunBver2v2_Data_20191101/crab.log

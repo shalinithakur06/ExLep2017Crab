@@ -1,0 +1,902 @@
+DEBUG 2019-11-01 12:18:38.589 UTC: 	 Running on: Linux lxplus707.cern.ch 3.10.0-1062.1.2.el7.x86_64 #1 SMP Mon Sep 30 14:19:46 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	CentOS Linux release 7.7.1908 (Core) 
+
+DEBUG 2019-11-01 12:18:38.589 UTC: 	 Executing command: 'submit'
+DEBUG 2019-11-01 12:18:38.597 UTC: 	 Found CRAB cache file /afs/cern.ch/user/s/sthakur/.crab3
+DEBUG 2019-11-01 12:18:38.604 UTC: 	 Checking credentials
+DEBUG 2019-11-01 12:18:38.604 UTC: 	 Found proxy file /tmp/x509up_u77410
+DEBUG 2019-11-01 12:18:38.604 UTC: 	 Getting proxy life time left
+DEBUG 2019-11-01 12:18:39.312 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -timeleft
+ output : 42679
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-01 12:18:40.019 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -actimeleft
+ output : 42679
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-01 12:18:40.020 UTC: 	 Proxy valid for 11:51:19 hours
+DEBUG 2019-11-01 12:18:40.020 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+DEBUG 2019-11-01 12:18:40.199 UTC: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-01 12:18:40.199 UTC: 	 Checking credentials
+DEBUG 2019-11-01 12:18:40.199 UTC: 	 Found proxy file /tmp/x509up_u77410
+DEBUG 2019-11-01 12:18:40.199 UTC: 	 Getting proxy life time left
+DEBUG 2019-11-01 12:18:40.905 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -timeleft
+ output : 42678
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-01 12:18:41.612 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -actimeleft
+ output : 42677
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-01 12:18:41.612 UTC: 	 Proxy lifetime 42678 secs is different from voms extension lifetime 42677 secs for proxy: /tmp/x509up_u77410
+DEBUG 2019-11-01 12:18:41.612 UTC: 	 Proxy valid for 11:51:17 hours
+DEBUG 2019-11-01 12:18:42.318 UTC: 	 Executing : 
+ command : env X509_USER_PROXY=/tmp/x509up_u77410 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-01 12:18:42.427 UTC: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+DEBUG 2019-11-01 12:18:42.537 UTC: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-01 12:18:42.538 UTC: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2019-11-01 12:18:42.538 UTC: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur_cmsweb.cern.ch for credential name
+DEBUG 2019-11-01 12:18:42.943 UTC: 	 Executing : 
+ command : myproxy-info -l 9cd94953387eeee7bf4da2b7588630639ea1153b -s myproxy.cern.ch
+ output : username: 9cd94953387eeee7bf4da2b7588630639ea1153b
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  timeleft: 558:19:18  (23.3 days)
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-01 12:18:42.944 UTC: 	 Myproxy is valid: 2009958
+DEBUG 2019-11-01 12:18:42.944 UTC: 	 Command use: submit
+DEBUG 2019-11-01 12:18:42.944 UTC: 	 Options use: ['--config', <WMCore.Configuration.Configuration object at 0x7f83d8dc8f50>]
+DEBUG 2019-11-01 12:18:43.081 UTC: 	 CRABClient version: 3.3.1910.patch2
+DEBUG 2019-11-01 12:18:43.081 UTC: 	 Instance is prod
+DEBUG 2019-11-01 12:18:43.081 UTC: 	 Server base url is cmsweb.cern.ch
+DEBUG 2019-11-01 12:18:43.081 UTC: 	 Command url /crabserver/prod/workflow
+DEBUG 2019-11-01 12:18:43.082 UTC: 	 Started submission
+DEBUG 2019-11-01 12:18:43.082 UTC: 	 Working on /afs/cern.ch/work/s/sthakur/xRavindra/MiniTree2017Data/CMSSW_10_4_0/src/ExLep2017Crab/crab/CrabMC_20191101/crab_WW_MC_20191101
+DEBUG 2019-11-01 12:18:43.321 UTC: 	 Loading required information from the environment
+DEBUG 2019-11-01 12:18:43.321 UTC: 	 Found CMSSW_10_4_0 for slc7_amd64_gcc700 with base /afs/cern.ch/work/s/sthakur/xRavindra/MiniTree2017Data/CMSSW_10_4_0
+DEBUG 2019-11-01 12:18:43.321 UTC: 	 Loading required information from the environment
+DEBUG 2019-11-01 12:18:43.321 UTC: 	 Found CMSSW_10_4_0 for slc7_amd64_gcc700 with base /afs/cern.ch/work/s/sthakur/xRavindra/MiniTree2017Data/CMSSW_10_4_0
+DEBUG 2019-11-01 12:18:43.336 UTC: 	 UNIQUE NAME: tarUUID 1c7c992a-454b-46f2-9e73-60b5e5ad917b 
+DEBUG 2019-11-01 12:18:43.337 UTC: 	 self.config: from WMCore.Configuration import Configuration
+config = Configuration()
+config.section_('General')
+config.General.workArea = 'CrabMC_20191101'
+config.General.transferOutputs = True
+config.General.transferLogs = False
+config.General.requestName = 'WW_MC_20191101'
+config.section_('JobType')
+config.JobType.psetName = '20191101/config/WW_MC_20191101_cfg.py'
+config.JobType.pluginName = 'Analysis'
+config.JobType.inputFiles = ['../../ExLep2017Tree/Selection/test/Fall17_V3_MC_PtResolution_AK8PF.txt', '../../ExLep2017Tree/Selection/test/Fall17_V3_MC_SF_AK8PF.txt']
+config.JobType.allowUndistributedCMSSW = True
+config.JobType.maxMemoryMB = 2000
+config.section_('Data')
+config.Data.inputDataset = '/WW_TuneCP5_13TeV-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM'
+config.Data.allowNonValidInputDataset = True
+config.Data.unitsPerJob = 10
+config.Data.inputDBS = 'global'
+config.Data.splitting = 'FileBased'
+config.Data.outputDatasetTag = 'WW_MC_20191101'
+config.Data.outLFNDirBase = '/store/user/sthakur/ntuple_for2017MC_20191101/MC_20191101/WW_MC_20191101'
+config.section_('Site')
+config.Site.storageSite = 'T2_IN_TIFR'
+config.section_('User')
+config.section_('Debug')
+
+DEBUG 2019-11-01 12:18:43.337 UTC: 	 self.config.JobType.psetName: 20191101/config/WW_MC_20191101_cfg.py
+INFO 2019-11-01 12:18:43.337 UTC: 	 Importing CMSSW configuration 20191101/config/WW_MC_20191101_cfg.py
+INFO 2019-11-01 12:18:43.661 UTC: 	 Finished importing CMSSW configuration 20191101/config/WW_MC_20191101_cfg.py
+DEBUG 2019-11-01 12:18:43.661 UTC: 	 Writing CMSSW configuration to /afs/cern.ch/work/s/sthakur/xRavindra/MiniTree2017Data/CMSSW_10_4_0/src/ExLep2017Crab/crab/CrabMC_20191101/crab_WW_MC_20191101/inputs/PSet.py
+DEBUG 2019-11-01 12:18:43.708 UTC: 	 The following EDM output files will be collected: []
+DEBUG 2019-11-01 12:18:43.708 UTC: 	 The following TFile output files will be collected: ['WW_MC_20191101_Ntuple.root']
+DEBUG 2019-11-01 12:18:43.708 UTC: 	 The following user output files (not listed as PoolOuputModule or TFileService in the CMSSW PSet) will be collected: 
+DEBUG 2019-11-01 12:18:43.708 UTC: 	 Loading required information from the environment
+DEBUG 2019-11-01 12:18:43.708 UTC: 	 Found CMSSW_10_4_0 for slc7_amd64_gcc700 with base /afs/cern.ch/work/s/sthakur/xRavindra/MiniTree2017Data/CMSSW_10_4_0
+DEBUG 2019-11-01 12:18:43.708 UTC: 	 Making tarball in /afs/cern.ch/work/s/sthakur/xRavindra/MiniTree2017Data/CMSSW_10_4_0/src/ExLep2017Crab/crab/CrabMC_20191101/crab_WW_MC_20191101/inputs/1c7c992a-454b-46f2-9e73-60b5e5ad917bdefault.tgz
+DEBUG 2019-11-01 12:18:43.710 UTC: 	 Checking directory /afs/cern.ch/work/s/sthakur/xRavindra/MiniTree2017Data/CMSSW_10_4_0/lib
+DEBUG 2019-11-01 12:18:43.710 UTC: 	 Adding directory /afs/cern.ch/work/s/sthakur/xRavindra/MiniTree2017Data/CMSSW_10_4_0/lib to tarball
+DEBUG 2019-11-01 12:18:43.723 UTC: 	 Checking directory /afs/cern.ch/work/s/sthakur/xRavindra/MiniTree2017Data/CMSSW_10_4_0/biglib
+DEBUG 2019-11-01 12:18:43.723 UTC: 	 Adding directory /afs/cern.ch/work/s/sthakur/xRavindra/MiniTree2017Data/CMSSW_10_4_0/biglib to tarball
+DEBUG 2019-11-01 12:18:43.723 UTC: 	 Checking directory /afs/cern.ch/work/s/sthakur/xRavindra/MiniTree2017Data/CMSSW_10_4_0/module
+DEBUG 2019-11-01 12:18:43.733 UTC: 	 Adding data directory /afs/cern.ch/work/s/sthakur/xRavindra/MiniTree2017Data/CMSSW_10_4_0/src/ExLep2017Tree/Selection/interface to tarball
+DEBUG 2019-11-01 12:18:43.752 UTC: 	 Adding file ../../ExLep2017Tree/Selection/test/Fall17_V3_MC_PtResolution_AK8PF.txt to tarball
+DEBUG 2019-11-01 12:18:43.753 UTC: 	 Adding file ../../ExLep2017Tree/Selection/test/Fall17_V3_MC_SF_AK8PF.txt to tarball
+DEBUG 2019-11-01 12:18:43.857 UTC: 	 Uploading archive /afs/cern.ch/work/s/sthakur/xRavindra/MiniTree2017Data/CMSSW_10_4_0/src/ExLep2017Crab/crab/CrabMC_20191101/crab_WW_MC_20191101/inputs/1c7c992a-454b-46f2-9e73-60b5e5ad917bdefault.tgz (239 KB) to the CRAB cache. Using URI https://cmsweb.cern.ch/crabcache
+DEBUG 2019-11-01 12:18:44.162 UTC: 	 Loading required information from the environment
+DEBUG 2019-11-01 12:18:44.162 UTC: 	 Found CMSSW_10_4_0 for slc7_amd64_gcc700 with base /afs/cern.ch/work/s/sthakur/xRavindra/MiniTree2017Data/CMSSW_10_4_0
+DEBUG 2019-11-01 12:18:44.163 UTC: 	 Making tarball in /afs/cern.ch/work/s/sthakur/xRavindra/MiniTree2017Data/CMSSW_10_4_0/src/ExLep2017Crab/crab/CrabMC_20191101/crab_WW_MC_20191101/inputs/debugFiles.tgz
+DEBUG 2019-11-01 12:18:44.168 UTC: 	 Uploading archive /afs/cern.ch/work/s/sthakur/xRavindra/MiniTree2017Data/CMSSW_10_4_0/src/ExLep2017Crab/crab/CrabMC_20191101/crab_WW_MC_20191101/inputs/debugFiles.tgz (2 KB) to the CRAB cache. Using URI https://cmsweb.cern.ch/crabcache
+DEBUG 2019-11-01 12:18:44.241 UTC: 	 Result uploading input files: ea8851382a156e0e9670dff33d40d7ff72849eaddc4260074daf32ab62781cb1.tar.gz 
+WARNING 2019-11-01 12:18:44.241 UTC: 	 Warning: The following output files will not be published, as they are not EDM files: ['WW_MC_20191101_Ntuple.root']
+INFO 2019-11-01 12:18:44.242 UTC: 	 Sending the request to the server at cmsweb.cern.ch
+DEBUG 2019-11-01 12:18:44.242 UTC: 	 Submitting {'maxjobruntime': 1250, 'extrajdl': [], 'ignorelocality': 0, 'savelogsflag': 0, 'useparent': 0, 'asyncdest': 'T2_IN_TIFR', 'algoargs': 10, 'cachefilename': 'ea8851382a156e0e9670dff33d40d7ff72849eaddc4260074daf32ab62781cb1.tar.gz', 'numcores': 1, 'addoutputfiles': [], 'generator': 'pythia', 'maxmemory': 2000, 'publishdbsurl': 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', 'priority': 10, 'jobsw': 'CMSSW_10_4_0', 'edmoutfiles': [], 'userfiles': [], 'primarydataset': '', 'inputdata': '/WW_TuneCP5_13TeV-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM', 'lfn': '/store/user/sthakur/ntuple_for2017MC_20191101/MC_20191101/WW_MC_20191101', 'dryrun': 0, 'workflow': 'crab_WW_MC_20191101', 'cacheurl': u'https://cmsweb.cern.ch/crabcache', 'nonprodsw': 1, 'tfileoutfiles': ['WW_MC_20191101_Ntuple.root'], 'oneEventMode': 0, 'debugfilename': '43d4a974b486483f3f5dfc33cc991eaa951d66660978f0cd64deeefa1b072d09.tar.gz', 'saveoutput': 1, 'publication': 1, 'jobarch': 'slc7_amd64_gcc700', 'totalunits': 0, 'splitalgo': 'FileBased', 'ignoreglobalblacklist': 0, 'nonvaliddata': 1, 'dbsurl': 'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', 'publishgroupname': 0, 'jobtype': 'Analysis', 'publishname2': 'WW_MC_20191101'} 
+DEBUG 2019-11-01 12:18:44.242 UTC: 	 Encoded submit request: maxjobruntime=1250&ignorelocality=0&savelogsflag=0&useparent=0&asyncdest=T2_IN_TIFR&algoargs=10&cachefilename=ea8851382a156e0e9670dff33d40d7ff72849eaddc4260074daf32ab62781cb1.tar.gz&numcores=1&generator=pythia&maxmemory=2000&publishdbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fphys03%2FDBSWriter&priority=10&jobsw=CMSSW_10_4_0&primarydataset=&inputdata=%2FWW_TuneCP5_13TeV-pythia8%2FRunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1%2FMINIAODSIM&lfn=%2Fstore%2Fuser%2Fsthakur%2Fntuple_for2017MC_20191101%2FMC_20191101%2FWW_MC_20191101&dryrun=0&workflow=crab_WW_MC_20191101&cacheurl=https%3A%2F%2Fcmsweb.cern.ch%2Fcrabcache&nonprodsw=1&oneEventMode=0&debugfilename=43d4a974b486483f3f5dfc33cc991eaa951d66660978f0cd64deeefa1b072d09.tar.gz&saveoutput=1&publication=1&jobarch=slc7_amd64_gcc700&totalunits=0&splitalgo=FileBased&ignoreglobalblacklist=0&nonvaliddata=1&dbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fglobal%2FDBSReader&publishgroupname=0&jobtype=Analysis&publishname2=WW_MC_20191101&tfileoutfiles=WW_MC_20191101_Ntuple.root
+DEBUG 2019-11-01 12:18:44.396 UTC: 	 Result: {u'result': [{u'RequestName': u'191101_121844:sthakur_crab_WW_MC_20191101'}]}
+INFO 2019-11-01 12:18:44.399 UTC: 	 Success: Your task has been delivered to the prod CRAB3 server.
+INFO 2019-11-01 12:18:44.399 UTC: 	 Task name: 191101_121844:sthakur_crab_WW_MC_20191101
+INFO 2019-11-01 12:18:44.399 UTC: 	 Project dir: CrabMC_20191101/crab_WW_MC_20191101
+INFO 2019-11-01 12:18:44.399 UTC: 	 Please use 'crab status -d CrabMC_20191101/crab_WW_MC_20191101' to check how the submission process proceeds.
+DEBUG 2019-11-01 12:18:44.400 UTC: 	 About to return
+DEBUG 2019-11-01 12:50:12.852 UTC: 	 Running on: Linux lxplus707.cern.ch 3.10.0-1062.1.2.el7.x86_64 #1 SMP Mon Sep 30 14:19:46 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	CentOS Linux release 7.7.1908 (Core) 
+
+DEBUG 2019-11-01 12:50:12.852 UTC: 	 Executing command: 'status'
+DEBUG 2019-11-01 12:50:12.853 UTC: 	 Found CRAB cache file /afs/cern.ch/user/s/sthakur/.crab3
+DEBUG 2019-11-01 12:50:12.862 UTC: 	 Checking credentials
+DEBUG 2019-11-01 12:50:12.862 UTC: 	 Found proxy file /tmp/x509up_u77410
+DEBUG 2019-11-01 12:50:12.862 UTC: 	 Getting proxy life time left
+DEBUG 2019-11-01 12:50:13.468 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -timeleft
+ output : 40785
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-01 12:50:14.174 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -actimeleft
+ output : 40784
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-01 12:50:14.174 UTC: 	 Proxy lifetime 40785 secs is different from voms extension lifetime 40784 secs for proxy: /tmp/x509up_u77410
+DEBUG 2019-11-01 12:50:14.174 UTC: 	 Proxy valid for 11:19:44 hours
+DEBUG 2019-11-01 12:50:14.358 UTC: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-01 12:50:14.358 UTC: 	 Checking credentials
+DEBUG 2019-11-01 12:50:14.358 UTC: 	 Found proxy file /tmp/x509up_u77410
+DEBUG 2019-11-01 12:50:14.359 UTC: 	 Getting proxy life time left
+DEBUG 2019-11-01 12:50:15.064 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -timeleft
+ output : 40784
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-01 12:50:15.670 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -actimeleft
+ output : 40783
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-01 12:50:15.670 UTC: 	 Proxy lifetime 40784 secs is different from voms extension lifetime 40783 secs for proxy: /tmp/x509up_u77410
+DEBUG 2019-11-01 12:50:15.670 UTC: 	 Proxy valid for 11:19:43 hours
+DEBUG 2019-11-01 12:50:15.751 UTC: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+DEBUG 2019-11-01 12:50:15.861 UTC: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-01 12:50:15.861 UTC: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2019-11-01 12:50:15.861 UTC: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur_cmsweb.cern.ch for credential name
+DEBUG 2019-11-01 12:50:16.267 UTC: 	 Executing : 
+ command : myproxy-info -l 9cd94953387eeee7bf4da2b7588630639ea1153b -s myproxy.cern.ch
+ output : username: 9cd94953387eeee7bf4da2b7588630639ea1153b
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  timeleft: 557:47:44  (23.2 days)
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-01 12:50:16.268 UTC: 	 Myproxy is valid: 2008064
+DEBUG 2019-11-01 12:50:16.268 UTC: 	 Command use: status
+DEBUG 2019-11-01 12:50:16.269 UTC: 	 Options use: ['--verboseErrors', 'CrabMC_20191101/crab_WW_MC_20191101']
+DEBUG 2019-11-01 12:50:16.366 UTC: 	 CRABClient version: 3.3.1910.patch2
+DEBUG 2019-11-01 12:50:16.366 UTC: 	 Instance is prod
+DEBUG 2019-11-01 12:50:16.366 UTC: 	 Server base url is cmsweb.cern.ch
+DEBUG 2019-11-01 12:50:16.366 UTC: 	 Command url /crabserver/prod/workflow
+DEBUG 2019-11-01 12:50:16.447 UTC: 	 Got information from server oracle database: {u'result': [u'191101_121844:sthakur_crab_WW_MC_20191101', u'None', u'None', u'SUBMITTED', u'SUBMIT', u'2019-11-01 12:18:44.352852', u'None', u'2019-11-01 12:19:50.828423', u'None', u'CMSSW_10_4_0', u'slc7_amd64_gcc700', u'/WW_TuneCP5_13TeV-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM', u'T', u'0', u'[]', u'[]', u'FileBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'files_per_job': 10, 'runs': [], 'lumis': []}", u'ea8851382a156e0e9670dff33d40d7ff72849eaddc4260074daf32ab62781cb1.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'sthakur', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur', u'cms', u'None', u'None', u'WW_MC_20191101-00000000000000000000000000000000', u'F', u'T2_IN_TIFR', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'T', u'[]', u"['WW_MC_20191101_Ntuple.root']", u'[]', u'Analysis', u'pythia', u'None', u'{}', u'[]', u'F', u'crab-prod-tw01', u'[]', u'1250', u'1', u'2000', u'10', u'None', u'[]', u'http://vocms0106.cern.ch/mon/cms251/191101_121844:sthakur_crab_WW_MC_20191101', u'None', u'[]', u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'cmsgwms-collector-global.cern.ch:9620,cmssrv623.fnal.gov:9620', u'crab3@vocms0106.cern.ch', u'F', u'[]', u'T', u'/store/user/sthakur/ntuple_for2017MC_20191101/MC_20191101/WW_MC_20191101', u'F', u'None', u'F', u'None', u'WW_TuneCP5_13TeV-pythia8', u'None', u'43d4a974b486483f3f5dfc33cc991eaa951d66660978f0cd64deeefa1b072d09.tar.gz', u'35158328', u'filetransfers', u'F', u'2001:1458:d00:2e::100:9b', u'0.0', u'None'], u'desc': {u'columns': [u'tm_taskname', u'tm_activity', u'panda_jobset_id', u'tm_task_status', u'tm_task_command', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_nonvalid_input_dataset', u'tm_use_parent', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_publish_groupname', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_job_type', u'tm_generator', u'tm_events_per_lumi', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_task_warnings', u'tm_user_webdir', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_asourl', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_last_publication', u'tm_debug_files', u'clusterid', u'tm_asodb', u'tm_ignore_global_blacklist', u'tm_submitter_ip_addr', u'tm_totalunits', u'tm_ddm_reqid']}}
+INFO 2019-11-01 12:50:16.448 UTC: 	 CRAB project directory:		/afs/cern.ch/work/s/sthakur/xRavindra/MiniTree2017Data/CMSSW_10_4_0/src/ExLep2017Crab/crab/CrabMC_20191101/crab_WW_MC_20191101
+INFO 2019-11-01 12:50:16.448 UTC: 	 Task name:			191101_121844:sthakur_crab_WW_MC_20191101
+INFO 2019-11-01 12:50:16.448 UTC: 	 Grid scheduler - Task Worker:	crab3@vocms0106.cern.ch - crab-prod-tw01
+INFO 2019-11-01 12:50:16.448 UTC: 	 Status on the CRAB server:	SUBMITTED
+INFO 2019-11-01 12:50:16.448 UTC: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/191101_121844%3Asthakur_crab_WW_MC_20191101
+INFO 2019-11-01 12:50:16.448 UTC: 	 Dashboard monitoring URL:	https://monit-grafana.cern.ch/d/cmsTMDetail/cms-task-monitoring-task-view?orgId=11&var-user=sthakur&var-task=191101_121844%3Asthakur_crab_WW_MC_20191101
+INFO 2019-11-01 12:50:16.449 UTC: 	 In case of issues with the dashboard, please provide feedback to hn-cms-computing-tools@cern.ch
+DEBUG 2019-11-01 12:50:16.449 UTC: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 35158328)
+DEBUG 2019-11-01 12:50:16.449 UTC: 	 Webdir is located at http://vocms0106.cern.ch/mon/cms251/191101_121844:sthakur_crab_WW_MC_20191101
+DEBUG 2019-11-01 12:50:16.524 UTC: 	 Proxied webdir is located at https://cmsweb.cern.ch/scheddmon/0106/cms251/191101_121844:sthakur_crab_WW_MC_20191101
+DEBUG 2019-11-01 12:50:16.524 UTC: 	 Retrieving 'status_cache' file from https://cmsweb.cern.ch/scheddmon/0106/cms251/191101_121844:sthakur_crab_WW_MC_20191101/status_cache
+DEBUG 2019-11-01 12:50:16.573 UTC: 	 Got information from status cache file: {'10': {'Retries': 0, 'WallDurations': [10.0, 1211.0], 'StartTimes': [1572611091.0], 'SubmitTimes': [1572610808.0], 'JobIds': ['35158339.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [802768], 'TotalUserCpuTimeHistory': [1026.0], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [37.0]}, '1': {'Retries': 0, 'WallDurations': [9.0, 1211.0], 'StartTimes': [1572611093.0], 'SubmitTimes': [1572610806.0], 'JobIds': ['35158331.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [781220], 'TotalUserCpuTimeHistory': [1018.0], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [34.0]}, '3': {'Retries': 0, 'WallDurations': [9.0, 1210.0], 'StartTimes': [1572611093.0], 'SubmitTimes': [1572610806.0], 'JobIds': ['35158332.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [786940], 'TotalUserCpuTimeHistory': [1018.0], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [35.0]}, '2': {'Retries': 0, 'WallDurations': [9.0, 1210.0], 'StartTimes': [1572611092.0], 'SubmitTimes': [1572610806.0], 'JobIds': ['35158330.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [765616], 'TotalUserCpuTimeHistory': [995.0], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [35.0]}, '5': {'Retries': 0, 'WallDurations': [10.0, 1211.0], 'StartTimes': [1572611094.0], 'SubmitTimes': [1572610807.0], 'JobIds': ['35158334.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [782828], 'TotalUserCpuTimeHistory': [1007.0], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [36.0]}, '4': {'Retries': 0, 'WallDurations': [9.0, 910.0], 'StartTimes': [1572611093.0], 'SubmitTimes': [1572610807.0], 'JobIds': ['35158333.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [780576], 'TotalUserCpuTimeHistory': [736.0], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [25.0]}, '7': {'Retries': 0, 'WallDurations': [9.0, 1211.0], 'StartTimes': [1572611086.0], 'SubmitTimes': [1572610807.0], 'JobIds': ['35158336.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [784772], 'TotalUserCpuTimeHistory': [1070.0], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [29.0]}, '6': {'Retries': 0, 'WallDurations': [9.0, 909.0], 'StartTimes': [1572611091.0], 'SubmitTimes': [1572610807.0], 'JobIds': ['35158335.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [793060], 'TotalUserCpuTimeHistory': [801.0], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [22.0]}, '9': {'Retries': 0, 'WallDurations': [8.0, 1208.0], 'StartTimes': [1572611084.0], 'SubmitTimes': [1572610808.0], 'JobIds': ['35158337.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [783840], 'TotalUserCpuTimeHistory': [1004.0], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [36.0]}, '8': {'Retries': 0, 'WallDurations': [9.0, 1210.0], 'StartTimes': [1572611086.0], 'SubmitTimes': [1572610808.0], 'JobIds': ['35158338.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': True, 'State': 'running', 'ResidentSetSize': [780580], 'TotalUserCpuTimeHistory': [970.0], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [33.0]}}
+INFO 2019-11-01 12:50:16.573 UTC: 	 Status on the scheduler:	SUBMITTED
+INFO 2019-11-01 12:50:16.573 UTC: 	 
+Jobs status:                    running      		100.0% (10/10)
+INFO 2019-11-01 12:50:16.573 UTC: 	 
+No publication information available yet
+INFO 2019-11-01 12:50:16.581 UTC: 	 Log file is /afs/cern.ch/work/s/sthakur/xRavindra/MiniTree2017Data/CMSSW_10_4_0/src/ExLep2017Crab/crab/CrabMC_20191101/crab_WW_MC_20191101/crab.log
+DEBUG 2019-11-01 16:57:41.375 UTC: 	 Running on: Linux lxplus721.cern.ch 3.10.0-1062.1.2.el7.x86_64 #1 SMP Mon Sep 30 14:19:46 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	CentOS Linux release 7.7.1908 (Core) 
+
+DEBUG 2019-11-01 16:57:41.375 UTC: 	 Executing command: 'status'
+DEBUG 2019-11-01 16:57:41.375 UTC: 	 Found CRAB cache file /afs/cern.ch/user/s/sthakur/.crab3
+DEBUG 2019-11-01 16:57:41.386 UTC: 	 Checking credentials
+DEBUG 2019-11-01 16:57:41.386 UTC: 	 Found proxy file /tmp/x509up_u77410
+DEBUG 2019-11-01 16:57:41.386 UTC: 	 Getting proxy life time left
+DEBUG 2019-11-01 16:57:42.096 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -timeleft
+ output : 42966
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-01 16:57:42.908 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -actimeleft
+ output : 42966
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-01 16:57:42.908 UTC: 	 Proxy valid for 11:56:06 hours
+DEBUG 2019-11-01 16:57:43.210 UTC: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-01 16:57:43.210 UTC: 	 Checking credentials
+DEBUG 2019-11-01 16:57:43.210 UTC: 	 Found proxy file /tmp/x509up_u77410
+DEBUG 2019-11-01 16:57:43.210 UTC: 	 Getting proxy life time left
+DEBUG 2019-11-01 16:57:44.120 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -timeleft
+ output : 42964
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-01 16:57:44.927 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -actimeleft
+ output : 42964
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-01 16:57:44.927 UTC: 	 Proxy valid for 11:56:04 hours
+DEBUG 2019-11-01 16:57:45.001 UTC: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+DEBUG 2019-11-01 16:57:45.111 UTC: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-01 16:57:45.111 UTC: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2019-11-01 16:57:45.111 UTC: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur_cmsweb.cern.ch for credential name
+DEBUG 2019-11-01 16:57:45.516 UTC: 	 Executing : 
+ command : myproxy-info -l 9cd94953387eeee7bf4da2b7588630639ea1153b -s myproxy.cern.ch
+ output : username: 9cd94953387eeee7bf4da2b7588630639ea1153b
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  timeleft: 553:40:15  (23.1 days)
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-01 16:57:45.517 UTC: 	 Myproxy is valid: 1993215
+DEBUG 2019-11-01 16:57:45.518 UTC: 	 Command use: status
+DEBUG 2019-11-01 16:57:45.518 UTC: 	 Options use: ['--verboseErrors', 'CrabMC_20191101/crab_WW_MC_20191101']
+DEBUG 2019-11-01 16:57:45.616 UTC: 	 CRABClient version: 3.3.1910.patch2
+DEBUG 2019-11-01 16:57:45.616 UTC: 	 Instance is prod
+DEBUG 2019-11-01 16:57:45.616 UTC: 	 Server base url is cmsweb.cern.ch
+DEBUG 2019-11-01 16:57:45.616 UTC: 	 Command url /crabserver/prod/workflow
+DEBUG 2019-11-01 16:57:45.705 UTC: 	 Got information from server oracle database: {u'result': [u'191101_121844:sthakur_crab_WW_MC_20191101', u'None', u'None', u'SUBMITTED', u'SUBMIT', u'2019-11-01 12:18:44.352852', u'None', u'2019-11-01 12:19:50.828423', u'None', u'CMSSW_10_4_0', u'slc7_amd64_gcc700', u'/WW_TuneCP5_13TeV-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM', u'T', u'0', u'[]', u'[]', u'FileBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'files_per_job': 10, 'runs': [], 'lumis': []}", u'ea8851382a156e0e9670dff33d40d7ff72849eaddc4260074daf32ab62781cb1.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'sthakur', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur', u'cms', u'None', u'None', u'WW_MC_20191101-00000000000000000000000000000000', u'F', u'T2_IN_TIFR', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'T', u'[]', u"['WW_MC_20191101_Ntuple.root']", u'[]', u'Analysis', u'pythia', u'None', u'{}', u'[]', u'F', u'crab-prod-tw01', u'[]', u'1250', u'1', u'2000', u'10', u'None', u'[]', u'http://vocms0106.cern.ch/mon/cms251/191101_121844:sthakur_crab_WW_MC_20191101', u'None', u'[]', u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'cmsgwms-collector-global.cern.ch:9620,cmssrv623.fnal.gov:9620', u'crab3@vocms0106.cern.ch', u'F', u'[]', u'T', u'/store/user/sthakur/ntuple_for2017MC_20191101/MC_20191101/WW_MC_20191101', u'F', u'None', u'F', u'None', u'WW_TuneCP5_13TeV-pythia8', u'None', u'43d4a974b486483f3f5dfc33cc991eaa951d66660978f0cd64deeefa1b072d09.tar.gz', u'35158328', u'filetransfers', u'F', u'2001:1458:d00:2e::100:9b', u'0.0', u'None'], u'desc': {u'columns': [u'tm_taskname', u'tm_activity', u'panda_jobset_id', u'tm_task_status', u'tm_task_command', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_nonvalid_input_dataset', u'tm_use_parent', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_publish_groupname', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_job_type', u'tm_generator', u'tm_events_per_lumi', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_task_warnings', u'tm_user_webdir', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_asourl', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_last_publication', u'tm_debug_files', u'clusterid', u'tm_asodb', u'tm_ignore_global_blacklist', u'tm_submitter_ip_addr', u'tm_totalunits', u'tm_ddm_reqid']}}
+INFO 2019-11-01 16:57:45.706 UTC: 	 CRAB project directory:		/afs/cern.ch/work/s/sthakur/xRavindra/MiniTree2017Data/CMSSW_10_4_0/src/ExLep2017Crab/crab/CrabMC_20191101/crab_WW_MC_20191101
+INFO 2019-11-01 16:57:45.706 UTC: 	 Task name:			191101_121844:sthakur_crab_WW_MC_20191101
+INFO 2019-11-01 16:57:45.706 UTC: 	 Grid scheduler - Task Worker:	crab3@vocms0106.cern.ch - crab-prod-tw01
+INFO 2019-11-01 16:57:45.706 UTC: 	 Status on the CRAB server:	SUBMITTED
+INFO 2019-11-01 16:57:45.706 UTC: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/191101_121844%3Asthakur_crab_WW_MC_20191101
+INFO 2019-11-01 16:57:45.706 UTC: 	 Dashboard monitoring URL:	https://monit-grafana.cern.ch/d/cmsTMDetail/cms-task-monitoring-task-view?orgId=11&var-user=sthakur&var-task=191101_121844%3Asthakur_crab_WW_MC_20191101
+INFO 2019-11-01 16:57:45.706 UTC: 	 In case of issues with the dashboard, please provide feedback to hn-cms-computing-tools@cern.ch
+DEBUG 2019-11-01 16:57:45.706 UTC: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 35158328)
+DEBUG 2019-11-01 16:57:45.706 UTC: 	 Webdir is located at http://vocms0106.cern.ch/mon/cms251/191101_121844:sthakur_crab_WW_MC_20191101
+DEBUG 2019-11-01 16:57:45.814 UTC: 	 Proxied webdir is located at https://cmsweb.cern.ch/scheddmon/0106/cms251/191101_121844:sthakur_crab_WW_MC_20191101
+DEBUG 2019-11-01 16:57:45.814 UTC: 	 Retrieving 'status_cache' file from https://cmsweb.cern.ch/scheddmon/0106/cms251/191101_121844:sthakur_crab_WW_MC_20191101/status_cache
+DEBUG 2019-11-01 16:57:45.867 UTC: 	 Got information from status cache file: {'10': {'Retries': 0, 'WallDurations': [10.0, 2446.0], 'StartTimes': [1572611091.0], 'SubmitTimes': [1572610808.0], 'JobIds': ['35158339.0'], 'EndTimes': [1572613537.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [802768], 'TotalUserCpuTimeHistory': [2092], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [73]}, '1': {'Retries': 0, 'WallDurations': [9.0, 5723.0], 'StartTimes': [1572611093.0], 'SubmitTimes': [1572610806.0], 'JobIds': ['35158331.0'], 'EndTimes': [1572616816.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [800500], 'TotalUserCpuTimeHistory': [4918], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [170]}, '3': {'Retries': 0, 'WallDurations': [9.0, 7078.0], 'StartTimes': [1572611093.0], 'SubmitTimes': [1572610806.0], 'JobIds': ['35158332.0'], 'EndTimes': [1572618171.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [820560], 'TotalUserCpuTimeHistory': [6267], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [221]}, '2': {'Retries': 0, 'WallDurations': [9.0, 6864.0], 'StartTimes': [1572611092.0], 'SubmitTimes': [1572610806.0], 'JobIds': ['35158330.0'], 'EndTimes': [1572617956.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [846508], 'TotalUserCpuTimeHistory': [6031], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [205]}, '5': {'Retries': 0, 'WallDurations': [10.0, 7013.0], 'StartTimes': [1572611094.0], 'SubmitTimes': [1572610807.0], 'JobIds': ['35158334.0'], 'EndTimes': [1572618107.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [798664], 'TotalUserCpuTimeHistory': [6209], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [212]}, '4': {'Retries': 0, 'WallDurations': [9.0, 6411.0], 'StartTimes': [1572611093.0], 'SubmitTimes': [1572610807.0], 'JobIds': ['35158333.0'], 'EndTimes': [1572617504.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [812788], 'TotalUserCpuTimeHistory': [5676], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [194]}, '7': {'Retries': 0, 'WallDurations': [9.0, 5636.0], 'StartTimes': [1572611086.0], 'SubmitTimes': [1572610807.0], 'JobIds': ['35158336.0'], 'EndTimes': [1572616722.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [801328], 'TotalUserCpuTimeHistory': [4576], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [116]}, '6': {'Retries': 0, 'WallDurations': [9.0, 5631.0], 'StartTimes': [1572611091.0], 'SubmitTimes': [1572610807.0], 'JobIds': ['35158335.0'], 'EndTimes': [1572616722.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [801816], 'TotalUserCpuTimeHistory': [4727], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [125]}, '9': {'Retries': 0, 'WallDurations': [8.0, 7571.0], 'StartTimes': [1572611084.0], 'SubmitTimes': [1572610808.0], 'JobIds': ['35158337.0'], 'EndTimes': [1572618655.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [856852], 'TotalUserCpuTimeHistory': [6695], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [228]}, '8': {'Retries': 0, 'WallDurations': [9.0, 6937.0], 'StartTimes': [1572611086.0], 'SubmitTimes': [1572610808.0], 'JobIds': ['35158338.0'], 'EndTimes': [1572618023.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [826700], 'TotalUserCpuTimeHistory': [6117], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [206]}}
+INFO 2019-11-01 16:57:45.867 UTC: 	 Status on the scheduler:	COMPLETED
+INFO 2019-11-01 16:57:45.867 UTC: 	 
+Jobs status:                    finished     		100.0% (10/10)
+INFO 2019-11-01 16:57:45.942 UTC: 	 
+No publication information available yet
+INFO 2019-11-01 16:57:45.942 UTC: 	 
+Warning: the max jobs runtime is less than 30% of the task requested value (1250 min), please consider to request a lower value for failed jobs (allowed through crab resubmit) and/or improve the jobs splitting (e.g. config.Data.splitting = 'Automatic') in a new task.
+INFO 2019-11-01 16:57:45.942 UTC: 	 
+Summary of run jobs:
+ * Memory: 781MB min, 836MB max, 798MB ave
+ * Runtime: 0:40:46 min, 2:06:11 max, 1:42:11 ave
+ * CPU eff: 83% min, 92% max, 90% ave
+ * Waste: 0:01:31 (0% of total)
+
+INFO 2019-11-01 16:57:45.968 UTC: 	 Log file is /afs/cern.ch/work/s/sthakur/xRavindra/MiniTree2017Data/CMSSW_10_4_0/src/ExLep2017Crab/crab/CrabMC_20191101/crab_WW_MC_20191101/crab.log
+DEBUG 2019-11-03 17:57:19.387 UTC: 	 Running on: Linux lxplus737.cern.ch 3.10.0-1062.1.2.el7.x86_64 #1 SMP Mon Sep 30 14:19:46 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	CentOS Linux release 7.7.1908 (Core) 
+
+DEBUG 2019-11-03 17:57:19.388 UTC: 	 Executing command: 'status'
+DEBUG 2019-11-03 17:57:19.388 UTC: 	 Found CRAB cache file /afs/cern.ch/user/s/sthakur/.crab3
+DEBUG 2019-11-03 17:57:19.424 UTC: 	 Checking credentials
+DEBUG 2019-11-03 17:57:19.424 UTC: 	 Found proxy file /tmp/x509up_u77410
+DEBUG 2019-11-03 17:57:19.425 UTC: 	 Getting proxy life time left
+DEBUG 2019-11-03 17:57:20.132 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -timeleft
+ output : 42966
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-03 17:57:20.841 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -actimeleft
+ output : 42966
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-03 17:57:20.841 UTC: 	 Proxy valid for 11:56:06 hours
+DEBUG 2019-11-03 17:57:20.955 UTC: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-03 17:57:20.955 UTC: 	 Checking credentials
+DEBUG 2019-11-03 17:57:20.955 UTC: 	 Found proxy file /tmp/x509up_u77410
+DEBUG 2019-11-03 17:57:20.955 UTC: 	 Getting proxy life time left
+DEBUG 2019-11-03 17:57:21.560 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -timeleft
+ output : 42965
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-03 17:57:22.268 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -actimeleft
+ output : 42964
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-03 17:57:22.268 UTC: 	 Proxy lifetime 42965 secs is different from voms extension lifetime 42964 secs for proxy: /tmp/x509up_u77410
+DEBUG 2019-11-03 17:57:22.268 UTC: 	 Proxy valid for 11:56:04 hours
+DEBUG 2019-11-03 17:57:22.359 UTC: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+DEBUG 2019-11-03 17:57:22.471 UTC: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-03 17:57:22.471 UTC: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2019-11-03 17:57:22.471 UTC: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur_cmsweb.cern.ch for credential name
+DEBUG 2019-11-03 17:57:22.876 UTC: 	 Executing : 
+ command : myproxy-info -l 9cd94953387eeee7bf4da2b7588630639ea1153b -s myproxy.cern.ch
+ output : username: 9cd94953387eeee7bf4da2b7588630639ea1153b
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  timeleft: 504:40:38  (21.0 days)
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-03 17:57:22.877 UTC: 	 Myproxy is valid: 1816838
+DEBUG 2019-11-03 17:57:22.878 UTC: 	 Command use: status
+DEBUG 2019-11-03 17:57:22.878 UTC: 	 Options use: ['--verboseErrors', 'CrabMC_20191101/crab_WW_MC_20191101']
+DEBUG 2019-11-03 17:57:22.945 UTC: 	 CRABClient version: 3.3.1910.patch2
+DEBUG 2019-11-03 17:57:22.946 UTC: 	 Instance is prod
+DEBUG 2019-11-03 17:57:22.946 UTC: 	 Server base url is cmsweb.cern.ch
+DEBUG 2019-11-03 17:57:22.946 UTC: 	 Command url /crabserver/prod/workflow
+DEBUG 2019-11-03 17:57:23.025 UTC: 	 Got information from server oracle database: {u'result': [u'191101_121844:sthakur_crab_WW_MC_20191101', u'None', u'None', u'SUBMITTED', u'SUBMIT', u'2019-11-01 12:18:44.352852', u'None', u'2019-11-01 12:19:50.828423', u'None', u'CMSSW_10_4_0', u'slc7_amd64_gcc700', u'/WW_TuneCP5_13TeV-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM', u'T', u'0', u'[]', u'[]', u'FileBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'files_per_job': 10, 'runs': [], 'lumis': []}", u'ea8851382a156e0e9670dff33d40d7ff72849eaddc4260074daf32ab62781cb1.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'sthakur', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur', u'cms', u'None', u'None', u'WW_MC_20191101-00000000000000000000000000000000', u'F', u'T2_IN_TIFR', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'T', u'[]', u"['WW_MC_20191101_Ntuple.root']", u'[]', u'Analysis', u'pythia', u'None', u'{}', u'[]', u'F', u'crab-prod-tw01', u'[]', u'1250', u'1', u'2000', u'10', u'None', u'[]', u'http://vocms0106.cern.ch/mon/cms251/191101_121844:sthakur_crab_WW_MC_20191101', u'None', u'[]', u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'cmsgwms-collector-global.cern.ch:9620,cmssrv623.fnal.gov:9620', u'crab3@vocms0106.cern.ch', u'F', u'[]', u'T', u'/store/user/sthakur/ntuple_for2017MC_20191101/MC_20191101/WW_MC_20191101', u'F', u'None', u'F', u'None', u'WW_TuneCP5_13TeV-pythia8', u'None', u'43d4a974b486483f3f5dfc33cc991eaa951d66660978f0cd64deeefa1b072d09.tar.gz', u'35158328', u'filetransfers', u'F', u'2001:1458:d00:2e::100:9b', u'0.0', u'None'], u'desc': {u'columns': [u'tm_taskname', u'tm_activity', u'panda_jobset_id', u'tm_task_status', u'tm_task_command', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_nonvalid_input_dataset', u'tm_use_parent', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_publish_groupname', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_job_type', u'tm_generator', u'tm_events_per_lumi', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_task_warnings', u'tm_user_webdir', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_asourl', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_last_publication', u'tm_debug_files', u'clusterid', u'tm_asodb', u'tm_ignore_global_blacklist', u'tm_submitter_ip_addr', u'tm_totalunits', u'tm_ddm_reqid']}}
+INFO 2019-11-03 17:57:23.026 UTC: 	 CRAB project directory:		/afs/cern.ch/work/s/sthakur/xRavindra/MiniTree2017Data/CMSSW_10_4_0/src/ExLep2017Crab/crab/CrabMC_20191101/crab_WW_MC_20191101
+INFO 2019-11-03 17:57:23.026 UTC: 	 Task name:			191101_121844:sthakur_crab_WW_MC_20191101
+INFO 2019-11-03 17:57:23.026 UTC: 	 Grid scheduler - Task Worker:	crab3@vocms0106.cern.ch - crab-prod-tw01
+INFO 2019-11-03 17:57:23.026 UTC: 	 Status on the CRAB server:	SUBMITTED
+INFO 2019-11-03 17:57:23.026 UTC: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/191101_121844%3Asthakur_crab_WW_MC_20191101
+INFO 2019-11-03 17:57:23.026 UTC: 	 Dashboard monitoring URL:	https://monit-grafana.cern.ch/d/cmsTMDetail/cms-task-monitoring-task-view?orgId=11&var-user=sthakur&var-task=191101_121844%3Asthakur_crab_WW_MC_20191101
+INFO 2019-11-03 17:57:23.026 UTC: 	 In case of issues with the dashboard, please provide feedback to hn-cms-computing-tools@cern.ch
+DEBUG 2019-11-03 17:57:23.026 UTC: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 35158328)
+DEBUG 2019-11-03 17:57:23.026 UTC: 	 Webdir is located at http://vocms0106.cern.ch/mon/cms251/191101_121844:sthakur_crab_WW_MC_20191101
+DEBUG 2019-11-03 17:57:23.123 UTC: 	 Proxied webdir is located at https://cmsweb.cern.ch/scheddmon/0106/cms251/191101_121844:sthakur_crab_WW_MC_20191101
+DEBUG 2019-11-03 17:57:23.123 UTC: 	 Retrieving 'status_cache' file from https://cmsweb.cern.ch/scheddmon/0106/cms251/191101_121844:sthakur_crab_WW_MC_20191101/status_cache
+DEBUG 2019-11-03 17:57:23.347 UTC: 	 Got information from status cache file: {'10': {'Retries': 0, 'WallDurations': [10.0, 2446.0], 'StartTimes': [1572611091.0], 'SubmitTimes': [1572610808.0], 'JobIds': ['35158339.0'], 'EndTimes': [1572613537.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [802768], 'TotalUserCpuTimeHistory': [2092], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [73]}, '1': {'Retries': 0, 'WallDurations': [9.0, 5723.0], 'StartTimes': [1572611093.0], 'SubmitTimes': [1572610806.0], 'JobIds': ['35158331.0'], 'EndTimes': [1572616816.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [800500], 'TotalUserCpuTimeHistory': [4918], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [170]}, '3': {'Retries': 0, 'WallDurations': [9.0, 7078.0], 'StartTimes': [1572611093.0], 'SubmitTimes': [1572610806.0], 'JobIds': ['35158332.0'], 'EndTimes': [1572618171.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [820560], 'TotalUserCpuTimeHistory': [6267], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [221]}, '2': {'Retries': 0, 'WallDurations': [9.0, 6864.0], 'StartTimes': [1572611092.0], 'SubmitTimes': [1572610806.0], 'JobIds': ['35158330.0'], 'EndTimes': [1572617956.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [846508], 'TotalUserCpuTimeHistory': [6031], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [205]}, '5': {'Retries': 0, 'WallDurations': [10.0, 7013.0], 'StartTimes': [1572611094.0], 'SubmitTimes': [1572610807.0], 'JobIds': ['35158334.0'], 'EndTimes': [1572618107.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [798664], 'TotalUserCpuTimeHistory': [6209], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [212]}, '4': {'Retries': 0, 'WallDurations': [9.0, 6411.0], 'StartTimes': [1572611093.0], 'SubmitTimes': [1572610807.0], 'JobIds': ['35158333.0'], 'EndTimes': [1572617504.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [812788], 'TotalUserCpuTimeHistory': [5676], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [194]}, '7': {'Retries': 0, 'WallDurations': [9.0, 5636.0], 'StartTimes': [1572611086.0], 'SubmitTimes': [1572610807.0], 'JobIds': ['35158336.0'], 'EndTimes': [1572616722.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [801328], 'TotalUserCpuTimeHistory': [4576], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [116]}, '6': {'Retries': 0, 'WallDurations': [9.0, 5631.0], 'StartTimes': [1572611091.0], 'SubmitTimes': [1572610807.0], 'JobIds': ['35158335.0'], 'EndTimes': [1572616722.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [801816], 'TotalUserCpuTimeHistory': [4727], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [125]}, '9': {'Retries': 0, 'WallDurations': [8.0, 7571.0], 'StartTimes': [1572611084.0], 'SubmitTimes': [1572610808.0], 'JobIds': ['35158337.0'], 'EndTimes': [1572618655.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [856852], 'TotalUserCpuTimeHistory': [6695], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [228]}, '8': {'Retries': 0, 'WallDurations': [9.0, 6937.0], 'StartTimes': [1572611086.0], 'SubmitTimes': [1572610808.0], 'JobIds': ['35158338.0'], 'EndTimes': [1572618023.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [826700], 'TotalUserCpuTimeHistory': [6117], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [206]}}
+INFO 2019-11-03 17:57:23.347 UTC: 	 Status on the scheduler:	COMPLETED
+INFO 2019-11-03 17:57:23.348 UTC: 	 
+Jobs status:                    finished     		100.0% (10/10)
+INFO 2019-11-03 17:57:23.470 UTC: 	 
+No publication information available yet
+INFO 2019-11-03 17:57:23.471 UTC: 	 
+Warning: the max jobs runtime is less than 30% of the task requested value (1250 min), please consider to request a lower value for failed jobs (allowed through crab resubmit) and/or improve the jobs splitting (e.g. config.Data.splitting = 'Automatic') in a new task.
+INFO 2019-11-03 17:57:23.472 UTC: 	 
+Summary of run jobs:
+ * Memory: 781MB min, 836MB max, 798MB ave
+ * Runtime: 0:40:46 min, 2:06:11 max, 1:42:11 ave
+ * CPU eff: 83% min, 92% max, 90% ave
+ * Waste: 0:01:31 (0% of total)
+
+INFO 2019-11-03 17:57:23.502 UTC: 	 Log file is /afs/cern.ch/work/s/sthakur/xRavindra/MiniTree2017Data/CMSSW_10_4_0/src/ExLep2017Crab/crab/CrabMC_20191101/crab_WW_MC_20191101/crab.log
+DEBUG 2019-11-03 18:03:45.106 UTC: 	 Running on: Linux lxplus737.cern.ch 3.10.0-1062.1.2.el7.x86_64 #1 SMP Mon Sep 30 14:19:46 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	CentOS Linux release 7.7.1908 (Core) 
+
+DEBUG 2019-11-03 18:03:45.106 UTC: 	 Executing command: 'resubmit'
+DEBUG 2019-11-03 18:03:45.106 UTC: 	 Found CRAB cache file /afs/cern.ch/user/s/sthakur/.crab3
+DEBUG 2019-11-03 18:03:45.113 UTC: 	 Checking credentials
+DEBUG 2019-11-03 18:03:45.114 UTC: 	 Found proxy file /tmp/x509up_u77410
+DEBUG 2019-11-03 18:03:45.114 UTC: 	 Getting proxy life time left
+DEBUG 2019-11-03 18:03:45.821 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -timeleft
+ output : 42581
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-03 18:03:46.530 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -actimeleft
+ output : 42580
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-03 18:03:46.531 UTC: 	 Proxy lifetime 42581 secs is different from voms extension lifetime 42580 secs for proxy: /tmp/x509up_u77410
+DEBUG 2019-11-03 18:03:46.531 UTC: 	 Proxy valid for 11:49:40 hours
+DEBUG 2019-11-03 18:03:46.645 UTC: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-03 18:03:46.645 UTC: 	 Checking credentials
+DEBUG 2019-11-03 18:03:46.645 UTC: 	 Found proxy file /tmp/x509up_u77410
+DEBUG 2019-11-03 18:03:46.645 UTC: 	 Getting proxy life time left
+DEBUG 2019-11-03 18:03:47.351 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -timeleft
+ output : 42579
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-03 18:03:48.059 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -actimeleft
+ output : 42578
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-03 18:03:48.059 UTC: 	 Proxy lifetime 42579 secs is different from voms extension lifetime 42578 secs for proxy: /tmp/x509up_u77410
+DEBUG 2019-11-03 18:03:48.059 UTC: 	 Proxy valid for 11:49:38 hours
+DEBUG 2019-11-03 18:03:48.149 UTC: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+DEBUG 2019-11-03 18:03:48.260 UTC: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-03 18:03:48.261 UTC: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2019-11-03 18:03:48.261 UTC: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur_cmsweb.cern.ch for credential name
+DEBUG 2019-11-03 18:03:48.566 UTC: 	 Executing : 
+ command : myproxy-info -l 9cd94953387eeee7bf4da2b7588630639ea1153b -s myproxy.cern.ch
+ output : username: 9cd94953387eeee7bf4da2b7588630639ea1153b
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  timeleft: 504:34:12  (21.0 days)
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-03 18:03:48.567 UTC: 	 Myproxy is valid: 1816452
+DEBUG 2019-11-03 18:03:48.667 UTC: 	 Command use: resubmit
+DEBUG 2019-11-03 18:03:48.668 UTC: 	 Options use: ['CrabMC_20191101/crab_WW_MC_20191101']
+DEBUG 2019-11-03 18:03:48.737 UTC: 	 CRABClient version: 3.3.1910.patch2
+DEBUG 2019-11-03 18:03:48.737 UTC: 	 Instance is prod
+DEBUG 2019-11-03 18:03:48.737 UTC: 	 Server base url is cmsweb.cern.ch
+DEBUG 2019-11-03 18:03:48.737 UTC: 	 Command url /crabserver/prod/workflow
+DEBUG 2019-11-03 18:03:48.775 UTC: 	 Running on: Linux lxplus737.cern.ch 3.10.0-1062.1.2.el7.x86_64 #1 SMP Mon Sep 30 14:19:46 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	CentOS Linux release 7.7.1908 (Core) 
+
+DEBUG 2019-11-03 18:03:48.775 UTC: 	 Executing command: 'status'
+DEBUG 2019-11-03 18:03:48.776 UTC: 	 Found CRAB cache file /afs/cern.ch/user/s/sthakur/.crab3
+DEBUG 2019-11-03 18:03:48.785 UTC: 	 Checking credentials
+DEBUG 2019-11-03 18:03:48.785 UTC: 	 Found proxy file /tmp/x509up_u77410
+DEBUG 2019-11-03 18:03:48.785 UTC: 	 Getting proxy life time left
+DEBUG 2019-11-03 18:03:49.490 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -timeleft
+ output : 42577
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-03 18:03:50.198 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -actimeleft
+ output : 42576
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-03 18:03:50.198 UTC: 	 Proxy lifetime 42577 secs is different from voms extension lifetime 42576 secs for proxy: /tmp/x509up_u77410
+DEBUG 2019-11-03 18:03:50.198 UTC: 	 Proxy valid for 11:49:36 hours
+DEBUG 2019-11-03 18:03:50.389 UTC: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-03 18:03:50.389 UTC: 	 Checking credentials
+DEBUG 2019-11-03 18:03:50.389 UTC: 	 Found proxy file /tmp/x509up_u77410
+DEBUG 2019-11-03 18:03:50.390 UTC: 	 Getting proxy life time left
+DEBUG 2019-11-03 18:03:51.096 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -timeleft
+ output : 42575
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-03 18:03:51.804 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -actimeleft
+ output : 42575
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-03 18:03:51.804 UTC: 	 Proxy valid for 11:49:35 hours
+DEBUG 2019-11-03 18:03:51.895 UTC: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+DEBUG 2019-11-03 18:03:52.008 UTC: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-03 18:03:52.009 UTC: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2019-11-03 18:03:52.009 UTC: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur_cmsweb.cern.ch for credential name
+DEBUG 2019-11-03 18:03:52.314 UTC: 	 Executing : 
+ command : myproxy-info -l 9cd94953387eeee7bf4da2b7588630639ea1153b -s myproxy.cern.ch
+ output : username: 9cd94953387eeee7bf4da2b7588630639ea1153b
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  timeleft: 504:34:08  (21.0 days)
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-03 18:03:52.314 UTC: 	 Myproxy is valid: 1816448
+DEBUG 2019-11-03 18:03:52.315 UTC: 	 Command use: status
+DEBUG 2019-11-03 18:03:52.315 UTC: 	 Options use: []
+DEBUG 2019-11-03 18:03:52.388 UTC: 	 CRABClient version: 3.3.1910.patch2
+DEBUG 2019-11-03 18:03:52.388 UTC: 	 Instance is prod
+DEBUG 2019-11-03 18:03:52.388 UTC: 	 Server base url is cmsweb.cern.ch
+DEBUG 2019-11-03 18:03:52.388 UTC: 	 Command url /crabserver/prod/workflow
+DEBUG 2019-11-03 18:03:52.499 UTC: 	 Got information from server oracle database: {u'result': [u'191101_121844:sthakur_crab_WW_MC_20191101', u'None', u'None', u'SUBMITTED', u'SUBMIT', u'2019-11-01 12:18:44.352852', u'None', u'2019-11-01 12:19:50.828423', u'None', u'CMSSW_10_4_0', u'slc7_amd64_gcc700', u'/WW_TuneCP5_13TeV-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM', u'T', u'0', u'[]', u'[]', u'FileBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'files_per_job': 10, 'runs': [], 'lumis': []}", u'ea8851382a156e0e9670dff33d40d7ff72849eaddc4260074daf32ab62781cb1.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'sthakur', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur', u'cms', u'None', u'None', u'WW_MC_20191101-00000000000000000000000000000000', u'F', u'T2_IN_TIFR', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'T', u'[]', u"['WW_MC_20191101_Ntuple.root']", u'[]', u'Analysis', u'pythia', u'None', u'{}', u'[]', u'F', u'crab-prod-tw01', u'[]', u'1250', u'1', u'2000', u'10', u'None', u'[]', u'http://vocms0106.cern.ch/mon/cms251/191101_121844:sthakur_crab_WW_MC_20191101', u'None', u'[]', u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'cmsgwms-collector-global.cern.ch:9620,cmssrv623.fnal.gov:9620', u'crab3@vocms0106.cern.ch', u'F', u'[]', u'T', u'/store/user/sthakur/ntuple_for2017MC_20191101/MC_20191101/WW_MC_20191101', u'F', u'None', u'F', u'None', u'WW_TuneCP5_13TeV-pythia8', u'None', u'43d4a974b486483f3f5dfc33cc991eaa951d66660978f0cd64deeefa1b072d09.tar.gz', u'35158328', u'filetransfers', u'F', u'2001:1458:d00:2e::100:9b', u'0.0', u'None'], u'desc': {u'columns': [u'tm_taskname', u'tm_activity', u'panda_jobset_id', u'tm_task_status', u'tm_task_command', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_nonvalid_input_dataset', u'tm_use_parent', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_publish_groupname', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_job_type', u'tm_generator', u'tm_events_per_lumi', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_task_warnings', u'tm_user_webdir', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_asourl', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_last_publication', u'tm_debug_files', u'clusterid', u'tm_asodb', u'tm_ignore_global_blacklist', u'tm_submitter_ip_addr', u'tm_totalunits', u'tm_ddm_reqid']}}
+INFO 2019-11-03 18:03:52.499 UTC: 	 CRAB project directory:		/afs/cern.ch/work/s/sthakur/xRavindra/MiniTree2017Data/CMSSW_10_4_0/src/ExLep2017Crab/crab/CrabMC_20191101/crab_WW_MC_20191101
+INFO 2019-11-03 18:03:52.499 UTC: 	 Task name:			191101_121844:sthakur_crab_WW_MC_20191101
+INFO 2019-11-03 18:03:52.499 UTC: 	 Grid scheduler - Task Worker:	crab3@vocms0106.cern.ch - crab-prod-tw01
+INFO 2019-11-03 18:03:52.499 UTC: 	 Status on the CRAB server:	SUBMITTED
+INFO 2019-11-03 18:03:52.499 UTC: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/191101_121844%3Asthakur_crab_WW_MC_20191101
+INFO 2019-11-03 18:03:52.499 UTC: 	 Dashboard monitoring URL:	https://monit-grafana.cern.ch/d/cmsTMDetail/cms-task-monitoring-task-view?orgId=11&var-user=sthakur&var-task=191101_121844%3Asthakur_crab_WW_MC_20191101
+INFO 2019-11-03 18:03:52.499 UTC: 	 In case of issues with the dashboard, please provide feedback to hn-cms-computing-tools@cern.ch
+DEBUG 2019-11-03 18:03:52.499 UTC: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 35158328)
+DEBUG 2019-11-03 18:03:52.499 UTC: 	 Webdir is located at http://vocms0106.cern.ch/mon/cms251/191101_121844:sthakur_crab_WW_MC_20191101
+DEBUG 2019-11-03 18:03:52.582 UTC: 	 Proxied webdir is located at https://cmsweb.cern.ch/scheddmon/0106/cms251/191101_121844:sthakur_crab_WW_MC_20191101
+DEBUG 2019-11-03 18:03:52.582 UTC: 	 Retrieving 'status_cache' file from https://cmsweb.cern.ch/scheddmon/0106/cms251/191101_121844:sthakur_crab_WW_MC_20191101/status_cache
+DEBUG 2019-11-03 18:03:52.647 UTC: 	 Got information from status cache file: {'10': {'Retries': 0, 'WallDurations': [10.0, 2446.0], 'StartTimes': [1572611091.0], 'SubmitTimes': [1572610808.0], 'JobIds': ['35158339.0'], 'EndTimes': [1572613537.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [802768], 'TotalUserCpuTimeHistory': [2092], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [73]}, '1': {'Retries': 0, 'WallDurations': [9.0, 5723.0], 'StartTimes': [1572611093.0], 'SubmitTimes': [1572610806.0], 'JobIds': ['35158331.0'], 'EndTimes': [1572616816.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [800500], 'TotalUserCpuTimeHistory': [4918], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [170]}, '3': {'Retries': 0, 'WallDurations': [9.0, 7078.0], 'StartTimes': [1572611093.0], 'SubmitTimes': [1572610806.0], 'JobIds': ['35158332.0'], 'EndTimes': [1572618171.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [820560], 'TotalUserCpuTimeHistory': [6267], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [221]}, '2': {'Retries': 0, 'WallDurations': [9.0, 6864.0], 'StartTimes': [1572611092.0], 'SubmitTimes': [1572610806.0], 'JobIds': ['35158330.0'], 'EndTimes': [1572617956.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [846508], 'TotalUserCpuTimeHistory': [6031], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [205]}, '5': {'Retries': 0, 'WallDurations': [10.0, 7013.0], 'StartTimes': [1572611094.0], 'SubmitTimes': [1572610807.0], 'JobIds': ['35158334.0'], 'EndTimes': [1572618107.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [798664], 'TotalUserCpuTimeHistory': [6209], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [212]}, '4': {'Retries': 0, 'WallDurations': [9.0, 6411.0], 'StartTimes': [1572611093.0], 'SubmitTimes': [1572610807.0], 'JobIds': ['35158333.0'], 'EndTimes': [1572617504.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [812788], 'TotalUserCpuTimeHistory': [5676], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [194]}, '7': {'Retries': 0, 'WallDurations': [9.0, 5636.0], 'StartTimes': [1572611086.0], 'SubmitTimes': [1572610807.0], 'JobIds': ['35158336.0'], 'EndTimes': [1572616722.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [801328], 'TotalUserCpuTimeHistory': [4576], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [116]}, '6': {'Retries': 0, 'WallDurations': [9.0, 5631.0], 'StartTimes': [1572611091.0], 'SubmitTimes': [1572610807.0], 'JobIds': ['35158335.0'], 'EndTimes': [1572616722.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [801816], 'TotalUserCpuTimeHistory': [4727], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [125]}, '9': {'Retries': 0, 'WallDurations': [8.0, 7571.0], 'StartTimes': [1572611084.0], 'SubmitTimes': [1572610808.0], 'JobIds': ['35158337.0'], 'EndTimes': [1572618655.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [856852], 'TotalUserCpuTimeHistory': [6695], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [228]}, '8': {'Retries': 0, 'WallDurations': [9.0, 6937.0], 'StartTimes': [1572611086.0], 'SubmitTimes': [1572610808.0], 'JobIds': ['35158338.0'], 'EndTimes': [1572618023.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [826700], 'TotalUserCpuTimeHistory': [6117], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [206]}}
+INFO 2019-11-03 18:03:52.647 UTC: 	 Status on the scheduler:	COMPLETED
+INFO 2019-11-03 18:03:52.647 UTC: 	 
+Jobs status:                    finished     		100.0% (10/10)
+INFO 2019-11-03 18:03:52.748 UTC: 	 
+No publication information available yet
+INFO 2019-11-03 18:03:52.748 UTC: 	 
+Warning: the max jobs runtime is less than 30% of the task requested value (1250 min), please consider to request a lower value for failed jobs (allowed through crab resubmit) and/or improve the jobs splitting (e.g. config.Data.splitting = 'Automatic') in a new task.
+INFO 2019-11-03 18:03:52.749 UTC: 	 
+Summary of run jobs:
+ * Memory: 781MB min, 836MB max, 798MB ave
+ * Runtime: 0:40:46 min, 2:06:11 max, 1:42:11 ave
+ * CPU eff: 83% min, 92% max, 90% ave
+ * Waste: 0:01:31 (0% of total)
+
+DEBUG 2019-11-03 18:03:52.753 UTC: 	 Requesting resubmission of failed jobs in task 191101_121844:sthakur_crab_WW_MC_20191101
+ERROR 2019-11-03 18:03:52.753 UTC: 	 Found no jobs to resubmit. Only jobs in status failed can be resubmitted. Jobs in status finished can also be resubmitted, but only if the jobids are specified and the force option is set.
+ERROR 2019-11-03 18:03:52.753 UTC: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/bin/crab", line 147, in __call__
+    self.cmd()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/resubmit.py", line 63, in __call__
+    self.jobids = self.processJobIds(jobList)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1910.patch2/lib/python2.7/site-packages/CRABClient/Commands/resubmit.py", line 172, in processJobIds
+    raise ConfigurationException(msg)
+ConfigurationException: Found no jobs to resubmit. Only jobs in status failed can be resubmitted. Jobs in status finished can also be resubmitted, but only if the jobids are specified and the force option is set.
+DEBUG 2019-11-04 17:53:22.583 UTC: 	 Running on: Linux lxplus794.cern.ch 3.10.0-1062.4.1.el7.x86_64 #1 SMP Fri Oct 18 17:15:30 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
+Description:	CentOS Linux release 7.7.1908 (Core) 
+
+DEBUG 2019-11-04 17:53:22.583 UTC: 	 Executing command: 'status'
+DEBUG 2019-11-04 17:53:22.584 UTC: 	 Found CRAB cache file /afs/cern.ch/user/s/sthakur/.crab3
+DEBUG 2019-11-04 17:53:22.620 UTC: 	 Checking credentials
+DEBUG 2019-11-04 17:53:22.620 UTC: 	 Found proxy file /tmp/x509up_u77410
+DEBUG 2019-11-04 17:53:22.620 UTC: 	 Getting proxy life time left
+DEBUG 2019-11-04 17:53:23.227 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -timeleft
+ output : 42986
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-04 17:53:23.832 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -actimeleft
+ output : 42986
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-04 17:53:23.832 UTC: 	 Proxy valid for 11:56:26 hours
+DEBUG 2019-11-04 17:53:24.069 UTC: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-04 17:53:24.070 UTC: 	 Checking credentials
+DEBUG 2019-11-04 17:53:24.070 UTC: 	 Found proxy file /tmp/x509up_u77410
+DEBUG 2019-11-04 17:53:24.070 UTC: 	 Getting proxy life time left
+DEBUG 2019-11-04 17:53:24.676 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -timeleft
+ output : 42985
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-04 17:53:25.282 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -actimeleft
+ output : 42984
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-04 17:53:25.283 UTC: 	 Proxy lifetime 42985 secs is different from voms extension lifetime 42984 secs for proxy: /tmp/x509up_u77410
+DEBUG 2019-11-04 17:53:25.283 UTC: 	 Proxy valid for 11:56:24 hours
+DEBUG 2019-11-04 17:53:25.357 UTC: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+DEBUG 2019-11-04 17:53:25.469 UTC: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-04 17:53:25.469 UTC: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2019-11-04 17:53:25.469 UTC: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur_cmsweb.cern.ch for credential name
+DEBUG 2019-11-04 17:53:25.673 UTC: 	 Executing : 
+ command : myproxy-info -l 9cd94953387eeee7bf4da2b7588630639ea1153b -s myproxy.cern.ch
+ output : username: 9cd94953387eeee7bf4da2b7588630639ea1153b
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  timeleft: 480:44:35  (20.0 days)
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-04 17:53:25.675 UTC: 	 Myproxy is valid: 1730675
+DEBUG 2019-11-04 17:53:25.675 UTC: 	 Command use: status
+DEBUG 2019-11-04 17:53:25.675 UTC: 	 Options use: ['--verboseErrors', 'CrabMC_20191101/crab_WW_MC_20191101']
+DEBUG 2019-11-04 17:53:25.776 UTC: 	 CRABClient version: 3.3.1910.patch2
+DEBUG 2019-11-04 17:53:25.776 UTC: 	 Instance is prod
+DEBUG 2019-11-04 17:53:25.776 UTC: 	 Server base url is cmsweb.cern.ch
+DEBUG 2019-11-04 17:53:25.776 UTC: 	 Command url /crabserver/prod/workflow
+DEBUG 2019-11-04 17:53:25.918 UTC: 	 Got information from server oracle database: {u'result': [u'191101_121844:sthakur_crab_WW_MC_20191101', u'None', u'None', u'SUBMITTED', u'SUBMIT', u'2019-11-01 12:18:44.352852', u'None', u'2019-11-01 12:19:50.828423', u'None', u'CMSSW_10_4_0', u'slc7_amd64_gcc700', u'/WW_TuneCP5_13TeV-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM', u'T', u'0', u'[]', u'[]', u'FileBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'files_per_job': 10, 'runs': [], 'lumis': []}", u'ea8851382a156e0e9670dff33d40d7ff72849eaddc4260074daf32ab62781cb1.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'sthakur', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur', u'cms', u'None', u'None', u'WW_MC_20191101-00000000000000000000000000000000', u'F', u'T2_IN_TIFR', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'T', u'[]', u"['WW_MC_20191101_Ntuple.root']", u'[]', u'Analysis', u'pythia', u'None', u'{}', u'[]', u'F', u'crab-prod-tw01', u'[]', u'1250', u'1', u'2000', u'10', u'None', u'[]', u'http://vocms0106.cern.ch/mon/cms251/191101_121844:sthakur_crab_WW_MC_20191101', u'None', u'[]', u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'cmsgwms-collector-global.cern.ch:9620,cmssrv623.fnal.gov:9620', u'crab3@vocms0106.cern.ch', u'F', u'[]', u'T', u'/store/user/sthakur/ntuple_for2017MC_20191101/MC_20191101/WW_MC_20191101', u'F', u'None', u'F', u'None', u'WW_TuneCP5_13TeV-pythia8', u'None', u'43d4a974b486483f3f5dfc33cc991eaa951d66660978f0cd64deeefa1b072d09.tar.gz', u'35158328', u'filetransfers', u'F', u'2001:1458:d00:2e::100:9b', u'0.0', u'None'], u'desc': {u'columns': [u'tm_taskname', u'tm_activity', u'panda_jobset_id', u'tm_task_status', u'tm_task_command', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_nonvalid_input_dataset', u'tm_use_parent', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_publish_groupname', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_job_type', u'tm_generator', u'tm_events_per_lumi', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_task_warnings', u'tm_user_webdir', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_asourl', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_last_publication', u'tm_debug_files', u'clusterid', u'tm_asodb', u'tm_ignore_global_blacklist', u'tm_submitter_ip_addr', u'tm_totalunits', u'tm_ddm_reqid']}}
+INFO 2019-11-04 17:53:25.919 UTC: 	 CRAB project directory:		/afs/cern.ch/work/s/sthakur/xRavindra/MiniTree2017Data/CMSSW_10_4_0/src/ExLep2017Crab/crab/CrabMC_20191101/crab_WW_MC_20191101
+INFO 2019-11-04 17:53:25.919 UTC: 	 Task name:			191101_121844:sthakur_crab_WW_MC_20191101
+INFO 2019-11-04 17:53:25.919 UTC: 	 Grid scheduler - Task Worker:	crab3@vocms0106.cern.ch - crab-prod-tw01
+INFO 2019-11-04 17:53:25.919 UTC: 	 Status on the CRAB server:	SUBMITTED
+INFO 2019-11-04 17:53:25.919 UTC: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/191101_121844%3Asthakur_crab_WW_MC_20191101
+INFO 2019-11-04 17:53:25.919 UTC: 	 Dashboard monitoring URL:	https://monit-grafana.cern.ch/d/cmsTMDetail/cms-task-monitoring-task-view?orgId=11&var-user=sthakur&var-task=191101_121844%3Asthakur_crab_WW_MC_20191101
+INFO 2019-11-04 17:53:25.919 UTC: 	 In case of issues with the dashboard, please provide feedback to hn-cms-computing-tools@cern.ch
+DEBUG 2019-11-04 17:53:25.919 UTC: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 35158328)
+DEBUG 2019-11-04 17:53:25.919 UTC: 	 Webdir is located at http://vocms0106.cern.ch/mon/cms251/191101_121844:sthakur_crab_WW_MC_20191101
+DEBUG 2019-11-04 17:53:25.990 UTC: 	 Proxied webdir is located at https://cmsweb.cern.ch/scheddmon/0106/cms251/191101_121844:sthakur_crab_WW_MC_20191101
+DEBUG 2019-11-04 17:53:25.990 UTC: 	 Retrieving 'status_cache' file from https://cmsweb.cern.ch/scheddmon/0106/cms251/191101_121844:sthakur_crab_WW_MC_20191101/status_cache
+DEBUG 2019-11-04 17:53:26.257 UTC: 	 Got information from status cache file: {'10': {'Retries': 0, 'WallDurations': [10.0, 2446.0], 'StartTimes': [1572611091.0], 'SubmitTimes': [1572610808.0], 'JobIds': ['35158339.0'], 'EndTimes': [1572613537.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [802768], 'TotalUserCpuTimeHistory': [2092], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [73]}, '1': {'Retries': 0, 'WallDurations': [9.0, 5723.0], 'StartTimes': [1572611093.0], 'SubmitTimes': [1572610806.0], 'JobIds': ['35158331.0'], 'EndTimes': [1572616816.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [800500], 'TotalUserCpuTimeHistory': [4918], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [170]}, '3': {'Retries': 0, 'WallDurations': [9.0, 7078.0], 'StartTimes': [1572611093.0], 'SubmitTimes': [1572610806.0], 'JobIds': ['35158332.0'], 'EndTimes': [1572618171.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [820560], 'TotalUserCpuTimeHistory': [6267], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [221]}, '2': {'Retries': 0, 'WallDurations': [9.0, 6864.0], 'StartTimes': [1572611092.0], 'SubmitTimes': [1572610806.0], 'JobIds': ['35158330.0'], 'EndTimes': [1572617956.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [846508], 'TotalUserCpuTimeHistory': [6031], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [205]}, '5': {'Retries': 0, 'WallDurations': [10.0, 7013.0], 'StartTimes': [1572611094.0], 'SubmitTimes': [1572610807.0], 'JobIds': ['35158334.0'], 'EndTimes': [1572618107.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [798664], 'TotalUserCpuTimeHistory': [6209], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [212]}, '4': {'Retries': 0, 'WallDurations': [9.0, 6411.0], 'StartTimes': [1572611093.0], 'SubmitTimes': [1572610807.0], 'JobIds': ['35158333.0'], 'EndTimes': [1572617504.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [812788], 'TotalUserCpuTimeHistory': [5676], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [194]}, '7': {'Retries': 0, 'WallDurations': [9.0, 5636.0], 'StartTimes': [1572611086.0], 'SubmitTimes': [1572610807.0], 'JobIds': ['35158336.0'], 'EndTimes': [1572616722.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [801328], 'TotalUserCpuTimeHistory': [4576], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [116]}, '6': {'Retries': 0, 'WallDurations': [9.0, 5631.0], 'StartTimes': [1572611091.0], 'SubmitTimes': [1572610807.0], 'JobIds': ['35158335.0'], 'EndTimes': [1572616722.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [801816], 'TotalUserCpuTimeHistory': [4727], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [125]}, '9': {'Retries': 0, 'WallDurations': [8.0, 7571.0], 'StartTimes': [1572611084.0], 'SubmitTimes': [1572610808.0], 'JobIds': ['35158337.0'], 'EndTimes': [1572618655.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [856852], 'TotalUserCpuTimeHistory': [6695], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [228]}, '8': {'Retries': 0, 'WallDurations': [9.0, 6937.0], 'StartTimes': [1572611086.0], 'SubmitTimes': [1572610808.0], 'JobIds': ['35158338.0'], 'EndTimes': [1572618023.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [826700], 'TotalUserCpuTimeHistory': [6117], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [206]}}
+INFO 2019-11-04 17:53:26.257 UTC: 	 Status on the scheduler:	COMPLETED
+INFO 2019-11-04 17:53:26.257 UTC: 	 
+Jobs status:                    finished     		100.0% (10/10)
+INFO 2019-11-04 17:53:26.327 UTC: 	 
+No publication information available yet
+INFO 2019-11-04 17:53:26.327 UTC: 	 
+Warning: the max jobs runtime is less than 30% of the task requested value (1250 min), please consider to request a lower value for failed jobs (allowed through crab resubmit) and/or improve the jobs splitting (e.g. config.Data.splitting = 'Automatic') in a new task.
+INFO 2019-11-04 17:53:26.327 UTC: 	 
+Summary of run jobs:
+ * Memory: 781MB min, 836MB max, 798MB ave
+ * Runtime: 0:40:46 min, 2:06:11 max, 1:42:11 ave
+ * CPU eff: 83% min, 92% max, 90% ave
+ * Waste: 0:01:31 (0% of total)
+
+INFO 2019-11-04 17:53:26.343 UTC: 	 Log file is /afs/cern.ch/work/s/sthakur/xRavindra/MiniTree2017Data/CMSSW_10_4_0/src/ExLep2017Crab/crab/CrabMC_20191101/crab_WW_MC_20191101/crab.log
+DEBUG 2019-11-11 18:33:25.072 UTC: 	 Running on: Linux lxplus745.cern.ch 3.10.0-1062.4.1.el7.x86_64 #1 SMP Fri Oct 18 17:15:30 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2019-11-11 18:33:25.080 UTC: 	 OpenSSl version: OpenSSL 1.0.2h  3 May 2016
+DEBUG 2019-11-11 18:33:25.081 UTC: 	 Executing command: 'status'
+DEBUG 2019-11-11 18:33:25.081 UTC: 	 Found CRAB cache file /afs/cern.ch/user/s/sthakur/.crab3
+DEBUG 2019-11-11 18:33:25.094 UTC: 	 Checking credentials
+DEBUG 2019-11-11 18:33:25.094 UTC: 	 Found proxy file /tmp/x509up_u77410
+DEBUG 2019-11-11 18:33:25.094 UTC: 	 Getting proxy life time left
+DEBUG 2019-11-11 18:33:25.700 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -timeleft
+ output : 38855
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-11 18:33:26.406 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -actimeleft
+ output : 38854
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-11 18:33:26.406 UTC: 	 Proxy lifetime 38855 secs is different from voms extension lifetime 38854 secs for proxy: /tmp/x509up_u77410
+DEBUG 2019-11-11 18:33:26.406 UTC: 	 Proxy valid for 10:47:34 hours
+DEBUG 2019-11-11 18:33:26.569 UTC: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-11 18:33:26.570 UTC: 	 Checking credentials
+DEBUG 2019-11-11 18:33:26.570 UTC: 	 Found proxy file /tmp/x509up_u77410
+DEBUG 2019-11-11 18:33:26.570 UTC: 	 Getting proxy life time left
+DEBUG 2019-11-11 18:33:27.275 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -timeleft
+ output : 38853
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-11 18:33:27.981 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -actimeleft
+ output : 38853
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-11 18:33:27.982 UTC: 	 Proxy valid for 10:47:33 hours
+DEBUG 2019-11-11 18:33:28.056 UTC: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+DEBUG 2019-11-11 18:33:28.167 UTC: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-11 18:33:28.167 UTC: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2019-11-11 18:33:28.167 UTC: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur_cmsweb.cern.ch for credential name
+DEBUG 2019-11-11 18:33:28.372 UTC: 	 Executing : 
+ command : myproxy-info -l 9cd94953387eeee7bf4da2b7588630639ea1153b -s myproxy.cern.ch
+ output : username: 9cd94953387eeee7bf4da2b7588630639ea1153b
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  timeleft: 710:59:51  (29.6 days)
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-11 18:33:28.373 UTC: 	 Myproxy is valid: 2559591
+DEBUG 2019-11-11 18:33:28.374 UTC: 	 Command use: status
+DEBUG 2019-11-11 18:33:28.374 UTC: 	 Options use: ['--verboseErrors', 'CrabMC_20191101/crab_WW_MC_20191101']
+DEBUG 2019-11-11 18:33:28.481 UTC: 	 CRABClient version: 3.3.1911
+DEBUG 2019-11-11 18:33:28.481 UTC: 	 Instance is prod
+DEBUG 2019-11-11 18:33:28.481 UTC: 	 Server base url is cmsweb.cern.ch
+DEBUG 2019-11-11 18:33:28.481 UTC: 	 Command url /crabserver/prod/workflow
+DEBUG 2019-11-11 18:33:28.600 UTC: 	 Got information from server oracle database: {u'result': [u'191101_121844:sthakur_crab_WW_MC_20191101', u'None', u'None', u'SUBMITTED', u'SUBMIT', u'2019-11-01 12:18:44.352852', u'None', u'2019-11-01 12:19:50.828423', u'None', u'CMSSW_10_4_0', u'slc7_amd64_gcc700', u'/WW_TuneCP5_13TeV-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM', u'T', u'0', u'[]', u'[]', u'FileBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'files_per_job': 10, 'runs': [], 'lumis': []}", u'ea8851382a156e0e9670dff33d40d7ff72849eaddc4260074daf32ab62781cb1.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'sthakur', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur', u'cms', u'None', u'None', u'WW_MC_20191101-00000000000000000000000000000000', u'F', u'T2_IN_TIFR', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'T', u'[]', u"['WW_MC_20191101_Ntuple.root']", u'[]', u'Analysis', u'pythia', u'None', u'{}', u'[]', u'F', u'crab-prod-tw01', u'[]', u'1250', u'1', u'2000', u'10', u'None', u'[]', u'http://vocms0106.cern.ch/mon/cms251/191101_121844:sthakur_crab_WW_MC_20191101', u'None', u'[]', u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'cmsgwms-collector-global.cern.ch:9620,cmssrv623.fnal.gov:9620', u'crab3@vocms0106.cern.ch', u'F', u'[]', u'T', u'/store/user/sthakur/ntuple_for2017MC_20191101/MC_20191101/WW_MC_20191101', u'F', u'None', u'F', u'None', u'WW_TuneCP5_13TeV-pythia8', u'None', u'43d4a974b486483f3f5dfc33cc991eaa951d66660978f0cd64deeefa1b072d09.tar.gz', u'35158328', u'filetransfers', u'F', u'2001:1458:d00:2e::100:9b', u'0.0', u'None'], u'desc': {u'columns': [u'tm_taskname', u'tm_activity', u'panda_jobset_id', u'tm_task_status', u'tm_task_command', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_nonvalid_input_dataset', u'tm_use_parent', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_publish_groupname', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_job_type', u'tm_generator', u'tm_events_per_lumi', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_task_warnings', u'tm_user_webdir', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_asourl', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_last_publication', u'tm_debug_files', u'clusterid', u'tm_asodb', u'tm_ignore_global_blacklist', u'tm_submitter_ip_addr', u'tm_totalunits', u'tm_ddm_reqid']}}
+INFO 2019-11-11 18:33:28.601 UTC: 	 CRAB project directory:		/afs/cern.ch/work/s/sthakur/xRavindra/MiniTree2017Data/CMSSW_10_4_0/src/ExLep2017Crab/crab/CrabMC_20191101/crab_WW_MC_20191101
+INFO 2019-11-11 18:33:28.601 UTC: 	 Task name:			191101_121844:sthakur_crab_WW_MC_20191101
+INFO 2019-11-11 18:33:28.601 UTC: 	 Grid scheduler - Task Worker:	crab3@vocms0106.cern.ch - crab-prod-tw01
+INFO 2019-11-11 18:33:28.601 UTC: 	 Status on the CRAB server:	SUBMITTED
+INFO 2019-11-11 18:33:28.601 UTC: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/191101_121844%3Asthakur_crab_WW_MC_20191101
+INFO 2019-11-11 18:33:28.601 UTC: 	 Dashboard monitoring URL:	https://monit-grafana.cern.ch/d/cmsTMDetail/cms-task-monitoring-task-view?orgId=11&var-user=sthakur&var-task=191101_121844%3Asthakur_crab_WW_MC_20191101
+INFO 2019-11-11 18:33:28.601 UTC: 	 In case of issues with the dashboard, please provide feedback to hn-cms-computing-tools@cern.ch
+DEBUG 2019-11-11 18:33:28.602 UTC: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 35158328)
+DEBUG 2019-11-11 18:33:28.602 UTC: 	 Webdir is located at http://vocms0106.cern.ch/mon/cms251/191101_121844:sthakur_crab_WW_MC_20191101
+DEBUG 2019-11-11 18:33:28.688 UTC: 	 Proxied webdir is located at https://cmsweb.cern.ch/scheddmon/0106/cms251/191101_121844:sthakur_crab_WW_MC_20191101
+DEBUG 2019-11-11 18:33:28.688 UTC: 	 Retrieving 'status_cache' file from https://cmsweb.cern.ch/scheddmon/0106/cms251/191101_121844:sthakur_crab_WW_MC_20191101/status_cache
+DEBUG 2019-11-11 18:33:28.820 UTC: 	 Got information from status cache file: {'10': {'Retries': 0, 'WallDurations': [10.0, 2446.0], 'StartTimes': [1572611091.0], 'SubmitTimes': [1572610808.0], 'JobIds': ['35158339.0'], 'EndTimes': [1572613537.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [802768], 'TotalUserCpuTimeHistory': [2092], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [73]}, '1': {'Retries': 0, 'WallDurations': [9.0, 5723.0], 'StartTimes': [1572611093.0], 'SubmitTimes': [1572610806.0], 'JobIds': ['35158331.0'], 'EndTimes': [1572616816.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [800500], 'TotalUserCpuTimeHistory': [4918], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [170]}, '3': {'Retries': 0, 'WallDurations': [9.0, 7078.0], 'StartTimes': [1572611093.0], 'SubmitTimes': [1572610806.0], 'JobIds': ['35158332.0'], 'EndTimes': [1572618171.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [820560], 'TotalUserCpuTimeHistory': [6267], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [221]}, '2': {'Retries': 0, 'WallDurations': [9.0, 6864.0], 'StartTimes': [1572611092.0], 'SubmitTimes': [1572610806.0], 'JobIds': ['35158330.0'], 'EndTimes': [1572617956.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [846508], 'TotalUserCpuTimeHistory': [6031], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [205]}, '5': {'Retries': 0, 'WallDurations': [10.0, 7013.0], 'StartTimes': [1572611094.0], 'SubmitTimes': [1572610807.0], 'JobIds': ['35158334.0'], 'EndTimes': [1572618107.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [798664], 'TotalUserCpuTimeHistory': [6209], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [212]}, '4': {'Retries': 0, 'WallDurations': [9.0, 6411.0], 'StartTimes': [1572611093.0], 'SubmitTimes': [1572610807.0], 'JobIds': ['35158333.0'], 'EndTimes': [1572617504.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [812788], 'TotalUserCpuTimeHistory': [5676], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [194]}, '7': {'Retries': 0, 'WallDurations': [9.0, 5636.0], 'StartTimes': [1572611086.0], 'SubmitTimes': [1572610807.0], 'JobIds': ['35158336.0'], 'EndTimes': [1572616722.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [801328], 'TotalUserCpuTimeHistory': [4576], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [116]}, '6': {'Retries': 0, 'WallDurations': [9.0, 5631.0], 'StartTimes': [1572611091.0], 'SubmitTimes': [1572610807.0], 'JobIds': ['35158335.0'], 'EndTimes': [1572616722.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [801816], 'TotalUserCpuTimeHistory': [4727], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [125]}, '9': {'Retries': 0, 'WallDurations': [8.0, 7571.0], 'StartTimes': [1572611084.0], 'SubmitTimes': [1572610808.0], 'JobIds': ['35158337.0'], 'EndTimes': [1572618655.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [856852], 'TotalUserCpuTimeHistory': [6695], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [228]}, '8': {'Retries': 0, 'WallDurations': [9.0, 6937.0], 'StartTimes': [1572611086.0], 'SubmitTimes': [1572610808.0], 'JobIds': ['35158338.0'], 'EndTimes': [1572618023.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [826700], 'TotalUserCpuTimeHistory': [6117], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [206]}}
+INFO 2019-11-11 18:33:28.820 UTC: 	 Status on the scheduler:	COMPLETED
+INFO 2019-11-11 18:33:28.820 UTC: 	 
+Jobs status:                    finished     		100.0% (10/10)
+INFO 2019-11-11 18:33:28.925 UTC: 	 
+No publication information available yet
+INFO 2019-11-11 18:33:28.925 UTC: 	 
+Warning: the max jobs runtime is less than 30% of the task requested value (1250 min), please consider to request a lower value for failed jobs (allowed through crab resubmit) and/or improve the jobs splitting (e.g. config.Data.splitting = 'Automatic') in a new task.
+INFO 2019-11-11 18:33:28.925 UTC: 	 
+Summary of run jobs:
+ * Memory: 781MB min, 836MB max, 798MB ave
+ * Runtime: 0:40:46 min, 2:06:11 max, 1:42:11 ave
+ * CPU eff: 83% min, 92% max, 90% ave
+ * Waste: 0:01:31 (0% of total)
+
+INFO 2019-11-11 18:33:28.935 UTC: 	 Log file is /afs/cern.ch/work/s/sthakur/xRavindra/MiniTree2017Data/CMSSW_10_4_0/src/ExLep2017Crab/crab/CrabMC_20191101/crab_WW_MC_20191101/crab.log
+DEBUG 2019-11-11 18:49:16.474 UTC: 	 Running on: Linux lxplus714.cern.ch 3.10.0-1062.4.1.el7.x86_64 #1 SMP Fri Oct 18 17:15:30 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2019-11-11 18:49:16.492 UTC: 	 OpenSSl version: OpenSSL 1.0.2k-fips  26 Jan 2017 (Library: OpenSSL 1.0.2d-fips 9 Jul 2015)
+DEBUG 2019-11-11 18:49:16.493 UTC: 	 Executing command: 'status'
+DEBUG 2019-11-11 18:49:16.493 UTC: 	 Found CRAB cache file /afs/cern.ch/user/s/sthakur/.crab3
+DEBUG 2019-11-11 18:49:16.505 UTC: 	 Checking credentials
+DEBUG 2019-11-11 18:49:16.505 UTC: 	 Found proxy file /tmp/x509up_u77410
+DEBUG 2019-11-11 18:49:16.505 UTC: 	 Getting proxy life time left
+DEBUG 2019-11-11 18:49:17.313 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -timeleft
+ output : 43034
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-11 18:49:18.121 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -actimeleft
+ output : 43033
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-11 18:49:18.122 UTC: 	 Proxy lifetime 43034 secs is different from voms extension lifetime 43033 secs for proxy: /tmp/x509up_u77410
+DEBUG 2019-11-11 18:49:18.122 UTC: 	 Proxy valid for 11:57:13 hours
+DEBUG 2019-11-11 18:49:18.288 UTC: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-11 18:49:18.288 UTC: 	 Checking credentials
+DEBUG 2019-11-11 18:49:18.288 UTC: 	 Found proxy file /tmp/x509up_u77410
+DEBUG 2019-11-11 18:49:18.288 UTC: 	 Getting proxy life time left
+DEBUG 2019-11-11 18:49:19.206 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -timeleft
+ output : 43032
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-11 18:49:20.013 UTC: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u77410 -actimeleft
+ output : 43032
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-11 18:49:20.013 UTC: 	 Proxy valid for 11:57:12 hours
+DEBUG 2019-11-11 18:49:20.095 UTC: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+DEBUG 2019-11-11 18:49:20.208 UTC: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-11 18:49:20.209 UTC: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2019-11-11 18:49:20.209 UTC: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur_cmsweb.cern.ch for credential name
+DEBUG 2019-11-11 18:49:21.431 UTC: 	 Executing : 
+ command : myproxy-info -l 9cd94953387eeee7bf4da2b7588630639ea1153b -s myproxy.cern.ch
+ output : username: 9cd94953387eeee7bf4da2b7588630639ea1153b
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(052|058|030|0118|0105|0109).cern.ch|/DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod)-tw(02|01).cern.ch
+  timeleft: 710:43:58  (29.6 days)
+
+ error: 
+ retcode : 0
+DEBUG 2019-11-11 18:49:21.432 UTC: 	 Myproxy is valid: 2558638
+DEBUG 2019-11-11 18:49:21.432 UTC: 	 Command use: status
+DEBUG 2019-11-11 18:49:21.432 UTC: 	 Options use: ['--verboseErrors', 'CrabMC_20191101/crab_WW_MC_20191101']
+DEBUG 2019-11-11 18:49:21.530 UTC: 	 CRABClient version: 3.3.1911
+DEBUG 2019-11-11 18:49:21.530 UTC: 	 Instance is prod
+DEBUG 2019-11-11 18:49:21.530 UTC: 	 Server base url is cmsweb.cern.ch
+DEBUG 2019-11-11 18:49:21.531 UTC: 	 Command url /crabserver/prod/workflow
+DEBUG 2019-11-11 18:49:21.617 UTC: 	 Got information from server oracle database: {u'result': [u'191101_121844:sthakur_crab_WW_MC_20191101', u'None', u'None', u'SUBMITTED', u'SUBMIT', u'2019-11-01 12:18:44.352852', u'None', u'2019-11-01 12:19:50.828423', u'None', u'CMSSW_10_4_0', u'slc7_amd64_gcc700', u'/WW_TuneCP5_13TeV-pythia8/RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1/MINIAODSIM', u'T', u'0', u'[]', u'[]', u'FileBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'files_per_job': 10, 'runs': [], 'lumis': []}", u'ea8851382a156e0e9670dff33d40d7ff72849eaddc4260074daf32ab62781cb1.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'sthakur', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=sthakur/CN=764789/CN=Shalini Thakur', u'cms', u'None', u'None', u'WW_MC_20191101-00000000000000000000000000000000', u'F', u'T2_IN_TIFR', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'T', u'[]', u"['WW_MC_20191101_Ntuple.root']", u'[]', u'Analysis', u'pythia', u'None', u'{}', u'[]', u'F', u'crab-prod-tw01', u'[]', u'1250', u'1', u'2000', u'10', u'None', u'[]', u'http://vocms0106.cern.ch/mon/cms251/191101_121844:sthakur_crab_WW_MC_20191101', u'None', u'[]', u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'cmsgwms-collector-global.cern.ch:9620,cmssrv623.fnal.gov:9620', u'crab3@vocms0106.cern.ch', u'F', u'[]', u'T', u'/store/user/sthakur/ntuple_for2017MC_20191101/MC_20191101/WW_MC_20191101', u'F', u'None', u'F', u'None', u'WW_TuneCP5_13TeV-pythia8', u'None', u'43d4a974b486483f3f5dfc33cc991eaa951d66660978f0cd64deeefa1b072d09.tar.gz', u'35158328', u'filetransfers', u'F', u'2001:1458:d00:2e::100:9b', u'0.0', u'None'], u'desc': {u'columns': [u'tm_taskname', u'tm_activity', u'panda_jobset_id', u'tm_task_status', u'tm_task_command', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_nonvalid_input_dataset', u'tm_use_parent', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_publish_groupname', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_job_type', u'tm_generator', u'tm_events_per_lumi', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_task_warnings', u'tm_user_webdir', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_asourl', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_last_publication', u'tm_debug_files', u'clusterid', u'tm_asodb', u'tm_ignore_global_blacklist', u'tm_submitter_ip_addr', u'tm_totalunits', u'tm_ddm_reqid']}}
+INFO 2019-11-11 18:49:21.618 UTC: 	 CRAB project directory:		/afs/cern.ch/work/s/sthakur/xRavindra/MiniTree2017Data/CMSSW_10_4_0/src/ExLep2017Crab/crab/CrabMC_20191101/crab_WW_MC_20191101
+INFO 2019-11-11 18:49:21.618 UTC: 	 Task name:			191101_121844:sthakur_crab_WW_MC_20191101
+INFO 2019-11-11 18:49:21.618 UTC: 	 Grid scheduler - Task Worker:	crab3@vocms0106.cern.ch - crab-prod-tw01
+INFO 2019-11-11 18:49:21.618 UTC: 	 Status on the CRAB server:	SUBMITTED
+INFO 2019-11-11 18:49:21.618 UTC: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/191101_121844%3Asthakur_crab_WW_MC_20191101
+INFO 2019-11-11 18:49:21.618 UTC: 	 Dashboard monitoring URL:	https://monit-grafana.cern.ch/d/cmsTMDetail/cms-task-monitoring-task-view?orgId=11&var-user=sthakur&var-task=191101_121844%3Asthakur_crab_WW_MC_20191101
+INFO 2019-11-11 18:49:21.618 UTC: 	 In case of issues with the dashboard, please provide feedback to hn-cms-computing-tools@cern.ch
+DEBUG 2019-11-11 18:49:21.618 UTC: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 35158328)
+DEBUG 2019-11-11 18:49:21.618 UTC: 	 Webdir is located at http://vocms0106.cern.ch/mon/cms251/191101_121844:sthakur_crab_WW_MC_20191101
+DEBUG 2019-11-11 18:49:21.693 UTC: 	 Proxied webdir is located at https://cmsweb.cern.ch/scheddmon/0106/cms251/191101_121844:sthakur_crab_WW_MC_20191101
+DEBUG 2019-11-11 18:49:21.693 UTC: 	 Retrieving 'status_cache' file from https://cmsweb.cern.ch/scheddmon/0106/cms251/191101_121844:sthakur_crab_WW_MC_20191101/status_cache
+DEBUG 2019-11-11 18:49:21.752 UTC: 	 Got information from status cache file: {'10': {'Retries': 0, 'WallDurations': [10.0, 2446.0], 'StartTimes': [1572611091.0], 'SubmitTimes': [1572610808.0], 'JobIds': ['35158339.0'], 'EndTimes': [1572613537.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [802768], 'TotalUserCpuTimeHistory': [2092], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [73]}, '1': {'Retries': 0, 'WallDurations': [9.0, 5723.0], 'StartTimes': [1572611093.0], 'SubmitTimes': [1572610806.0], 'JobIds': ['35158331.0'], 'EndTimes': [1572616816.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [800500], 'TotalUserCpuTimeHistory': [4918], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [170]}, '3': {'Retries': 0, 'WallDurations': [9.0, 7078.0], 'StartTimes': [1572611093.0], 'SubmitTimes': [1572610806.0], 'JobIds': ['35158332.0'], 'EndTimes': [1572618171.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [820560], 'TotalUserCpuTimeHistory': [6267], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [221]}, '2': {'Retries': 0, 'WallDurations': [9.0, 6864.0], 'StartTimes': [1572611092.0], 'SubmitTimes': [1572610806.0], 'JobIds': ['35158330.0'], 'EndTimes': [1572617956.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [846508], 'TotalUserCpuTimeHistory': [6031], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [205]}, '5': {'Retries': 0, 'WallDurations': [10.0, 7013.0], 'StartTimes': [1572611094.0], 'SubmitTimes': [1572610807.0], 'JobIds': ['35158334.0'], 'EndTimes': [1572618107.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [798664], 'TotalUserCpuTimeHistory': [6209], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [212]}, '4': {'Retries': 0, 'WallDurations': [9.0, 6411.0], 'StartTimes': [1572611093.0], 'SubmitTimes': [1572610807.0], 'JobIds': ['35158333.0'], 'EndTimes': [1572617504.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [812788], 'TotalUserCpuTimeHistory': [5676], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [194]}, '7': {'Retries': 0, 'WallDurations': [9.0, 5636.0], 'StartTimes': [1572611086.0], 'SubmitTimes': [1572610807.0], 'JobIds': ['35158336.0'], 'EndTimes': [1572616722.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [801328], 'TotalUserCpuTimeHistory': [4576], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [116]}, '6': {'Retries': 0, 'WallDurations': [9.0, 5631.0], 'StartTimes': [1572611091.0], 'SubmitTimes': [1572610807.0], 'JobIds': ['35158335.0'], 'EndTimes': [1572616722.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [801816], 'TotalUserCpuTimeHistory': [4727], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [125]}, '9': {'Retries': 0, 'WallDurations': [8.0, 7571.0], 'StartTimes': [1572611084.0], 'SubmitTimes': [1572610808.0], 'JobIds': ['35158337.0'], 'EndTimes': [1572618655.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [856852], 'TotalUserCpuTimeHistory': [6695], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [228]}, '8': {'Retries': 0, 'WallDurations': [9.0, 6937.0], 'StartTimes': [1572611086.0], 'SubmitTimes': [1572610808.0], 'JobIds': ['35158338.0'], 'EndTimes': [1572618023.0], 'Restarts': 0, 'RecordedSite': True, 'State': 'finished', 'ResidentSetSize': [826700], 'TotalUserCpuTimeHistory': [6117], 'SiteHistory': ['Unknown', 'T2_ES_CIEMAT'], 'TotalSysCpuTimeHistory': [206]}}
+INFO 2019-11-11 18:49:21.752 UTC: 	 Status on the scheduler:	COMPLETED
+INFO 2019-11-11 18:49:21.752 UTC: 	 
+Jobs status:                    finished     		100.0% (10/10)
+INFO 2019-11-11 18:49:21.832 UTC: 	 
+No publication information available yet
+INFO 2019-11-11 18:49:21.833 UTC: 	 
+Warning: the max jobs runtime is less than 30% of the task requested value (1250 min), please consider to request a lower value for failed jobs (allowed through crab resubmit) and/or improve the jobs splitting (e.g. config.Data.splitting = 'Automatic') in a new task.
+INFO 2019-11-11 18:49:21.833 UTC: 	 
+Summary of run jobs:
+ * Memory: 781MB min, 836MB max, 798MB ave
+ * Runtime: 0:40:46 min, 2:06:11 max, 1:42:11 ave
+ * CPU eff: 83% min, 92% max, 90% ave
+ * Waste: 0:01:31 (0% of total)
+
+INFO 2019-11-11 18:49:21.843 UTC: 	 Log file is /afs/cern.ch/work/s/sthakur/xRavindra/MiniTree2017Data/CMSSW_10_4_0/src/ExLep2017Crab/crab/CrabMC_20191101/crab_WW_MC_20191101/crab.log
